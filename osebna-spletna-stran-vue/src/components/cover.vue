@@ -1,0 +1,113 @@
+<template>
+  <div class="header">
+    <div class="header-picture">
+      <div class="hp-text-container">
+        <p id="n1">Pozdravljeni moje ime je:</p>
+        <p id="n2">Lovro Mackošek</p>
+        <p id="n3">Inženir Infromatike, medijski tehnik</p>
+      </div>
+    </div>
+   <div class="personal-info">
+      <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
+      <p>Inženir Infromatike, medijski tehnik</p>
+      <p>IT engineer, Front-end web Developement, Multimedia designer</p>
+      <p>Šentjur pri Celju</p>
+      <p>lovro.mackosek@gmail.com</p>
+      <p>070 346 952</p>
+    </div>
+   <!-- <div class="about-me">
+      <h1 id="h11">O meni</h1>
+      <h2>MOJE OZADJE</h2>
+      <p>
+        Zanimam se za delo na področju računalništva, saj je računalništvo že
+        dolga leta moja strast. Moje izobraževanje me je usposobilo za
+        <b>delo v informacijskem sistemu</b> , s tem pa lahko vašemu podjetju
+        nudim računalniško podporo in delo z različno programsko opremo. V času
+        mojega izobraževanja sem se naučil: ustvarjati nove uporabnike (in jim
+        dodeljevali pravice), dodajati in odstranjevati strojno opremo,
+        ustvarjati varnostne kopije, posodabljati in instalirati programsko
+        opremo, nadzorovati računalniški sistem, osnove upravljanja z omrežjem
+        in odpravljanje napak.
+      </p>
+      <p id="push-p">
+        Za moje diplomsko delo sem se poglobil v razvoj spletnih strani, kjer
+        sem dobro spoznal računalniške jezike HTML, CSS in JavaScript in tako da
+        se tudi zanimam za <b>razvoj prednjega dela spletnih strani</b>, čeprav
+        raznorazna ogrodja kot so »react«, »vue.js«, so še vedno noviteta zame .
+        Prav tako pa znam <b>ustvarjati multimedijsko vsebino</b> z aktualno
+        programsko opremo in imam občutek za design.
+      </p>
+    </div>--> 
+  </div>
+</template>
+  
+  <script>
+export default {
+  name: "Cover",
+  methods: {},
+};
+</script>
+  
+<style lang="css" scoped>
+    .header {
+    display: flex;
+    height: 60vh;
+    }
+
+    .header-picture {
+    background-image: url(../assets/imgs/279547.webp);
+    width: 80%;
+    background-size: contain;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    }
+
+    .personal-info {
+    background-color: #585450;
+    width: 20%;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    }
+
+    .hp-text-container {
+    height: 200px;
+    width: 100%;
+    bottom: 0;
+    }
+
+    #n3 {
+    font-family: "Righteous", cursive;
+    font-size: 20px;
+    margin: 0px;
+    }
+
+    #n2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 75px;
+    margin: 0px;
+    }
+
+    #n1 {
+    font-family: "Lato", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    }
+
+    #n1,
+    #n2,
+    #n3 {
+    margin-left: 15px;
+    }
+
+    .cv-img {
+    height: 170px;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 30px;
+    }
+</style>
