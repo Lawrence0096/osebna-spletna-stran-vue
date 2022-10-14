@@ -1,19 +1,23 @@
 <template>
   <div class="header">
     <div class="header-picture">
-      <div class="hp-text-container">
+     <div class="hp-text-container">
         <p id="n1">Pozdravljeni moje ime je:</p>
         <p id="n2">Lovro Mackošek</p>
         <p id="n3">Inženir Infromatike, medijski tehnik</p>
       </div>
     </div>
    <div class="personal-info">
-      <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
-      <p>Inženir Infromatike, medijski tehnik</p>
-      <p>IT engineer, Front-end web Developement, Multimedia designer</p>
-      <p>Šentjur pri Celju</p>
-      <p>lovro.mackosek@gmail.com</p>
-      <p>070 346 952</p>
+     <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
+      <div style="width: 270px; line-height: 2;">
+        <p>Inženir Infromatike, medijski tehnik</p>
+        <p>IT engineer, Front-end web Developement, Multimedia designer</p>
+        <p>Šentjur pri Celju</p>
+        <p>lovro.mackosek@gmail.com</p>
+        <p>070 346 952</p>
+      </div>
+      
+  
     </div>
    <!-- <div class="about-me">
       <h1 id="h11">O meni</h1>
@@ -51,12 +55,19 @@ export default {
 <style lang="css" scoped>
     .header {
     display: flex;
-    height: 60vh;
+    height: 500px;
+    margin-top: 80px;
+    position: relative;
+
     }
+
+    .header  div:nth-of-type(1) {flex-grow: 3;}    
+    .header  div:nth-of-type(2) {flex-grow: 0.5;}
+
+
 
     .header-picture {
     background-image: url(../assets/imgs/279547.webp);
-    width: 80%;
     background-size: contain;
     background-size: cover;
     color: white;
@@ -65,18 +76,19 @@ export default {
     }
 
     .personal-info {
+    min-width: 300px!important;
     background-color: #585450;
-    width: 20%;
-    align-items: center;
-    text-align: center;
     color: white;
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     }
 
     .hp-text-container {
-    height: 200px;
-    width: 100%;
-    bottom: 0;
+    margin-bottom: 20px;
     }
 
     #n3 {
@@ -87,7 +99,7 @@ export default {
 
     #n2 {
     font-family: "Roboto", sans-serif;
-    font-size: 75px;
+    font-size: 70px;
     margin: 0px;
     }
 

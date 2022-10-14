@@ -32,7 +32,8 @@ export default {
 .navigation-bar {
   position: fixed;
   z-index: 20;
-  height: 10vh;
+  top: 0;
+  height: 80px;
   width: 100%;
   display: flex;
   justify-content: center;

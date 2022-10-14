@@ -3,19 +3,54 @@ import { RouterLink, RouterView } from "vue-router";
 //@ts-ignore
 import Header from "./components/header.vue";
 //@ts-ignore
-import Cover from "./components/cover.vue"
+import Cover from "./components/cover.vue";
+import Resume from "./components/resume.vue";
+import Button from 'primevue/button';
+import ProgressSpinner from 'primevue/progressspinner';
+
 
 export default {
   name: "app",
   methods: {
-    clickedShowDetailModal(e: string){
+    buttonClick() {
+      this.isScreenSizeMobile = !this.isScreenSizeMobile;
+      console.log(this.isScreenSizeMobile);
+    },
+    clickedShowDetailModal(e: string) {
       console.log(e);
-    }
+    },
+    checkScreenSizeOnInit() {
+      if (window.screen.width < 601) {
+        this.isScreenSizeMobile = true;
+      }
+
+      if (window.screen.width > 601) {
+        this.isScreenSizeMobile = false;
+      }
+    },
   },
   components: {
     Header,
-    Cover
-},
+    Cover,
+    Resume,
+    Button,
+    ProgressSpinner
+  },
+
+  mounted() {
+    this.checkScreenSizeOnInit();
+
+    window.addEventListener("resize", () => {
+      if (window.screen.width < 601) {
+        this.isScreenSizeMobile = true;
+      }
+
+      if (window.screen.width > 601) {
+        this.isScreenSizeMobile = false;
+      }
+    });
+  },
+
   data() {
     return {
       data: [
@@ -24,6 +59,7 @@ export default {
         "Znanja in projekti",
         "Kontakt",
       ],
+      isScreenSizeMobile: false,
     };
   },
 };
@@ -31,29 +67,50 @@ export default {
 <template>
   <div>
 
-    <Header
-      :headers="data"
-      @clicked-show-detail="clickedShowDetailModal"
-    ></Header>
-    <div style="height: 200px; width:100%;"></div>
-    <Cover></Cover>
+    <div v-if="!isScreenSizeMobile">
+      <Header
+        :headers="data"
+        @clicked-show-detail="clickedShowDetailModal"
+      ></Header>
 
-<a href="#sec-3">Section 3</a>
+      <Cover></Cover>
 
-    <div style="height:500px; width:100%; background-color: red;"></div>
-    <div style="height:500px; width:100%; background-color: green;"></div>
-    <div style="height:500px; width:100%; background-color: gray;"></div>
-    <div style="height:500px; width:100%; background-color: blue;"></div>
-    <div style="height:500px; width:100%; background-color: red;"></div>
-    <div style="height:500px; width:100%; background-color: green;"></div>
-    <div style="height:500px; width:100%; background-color: gray;"></div>
-    <div id="sec-3" style="height:500px; width:100%; background-color: blue;"></div>
+      <Button class="p-ripple purple" type="submit" label="Submit"/>
+      <ProgressSpinner/>
+
+            <Button label="Primary" />
+      <Button label="Secondary" class="p-button-secondary" />
+      <Button label="Success" class="p-button-success" />
+      <Button label="Info" class="p-button-info" />
+      <Button label="Warning" class="p-button-warning" />
+      <Button label="Warning" class="p-button-help" />
+      <Button label="Danger" class="p-button-danger" />
+      <!--<a href="#sec-3">Section 3</a>-->
+
+      <div class="resume-container">
+        <Resume></Resume>
+      </div>
   
+      <div style="height: 500px; width: 100%; background-color: green"></div>
+      <div style="height: 500px; width: 100%; background-color: gray"></div>
+      <div style="height: 500px; width: 100%; background-color: blue"></div>
+      <div style="height: 500px; width: 100%; background-color: red"></div>
+      <div style="height: 500px; width: 100%; background-color: green"></div>
+      <div style="height: 500px; width: 100%; background-color: gray"></div>
+      <div
+        id="sec-3"
+        style="height: 500px; width: 100%; background-color: blue"
+      ></div>
+    </div>
   </div>
 </template>
 
 <style scoped>
 
+  .resume-container{
+    height: 700px; 
+    width: 100%;
 
+  }
 </style>
 
