@@ -55,4 +55,7 @@ export default {
   color: rgb(0, 162, 255);
   cursor: pointer;
 }
+body {
+  margin: 0
+}
 </style>

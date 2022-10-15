@@ -11,31 +11,26 @@ export default {
   directives: {
     ripple: Ripple,
   },
+  methods: {
+    showGoToLink(){
+        document.location= 'https://drive.google.com/file/d/1a6HYltlqUvov26j2TjpGgE1407c0qxGu/view';
+    }
+  },
+
 };
 </script>
 
 <template>
   <div class="main-container">
-    <Button />
-    <div>
-        <div class="card-container flex">
-            <div class="card primary-box p-ripple" v-ripple>Default</div>
-            <div class="card styled-box-green p-ripple" v-ripple>Green</div>
-            <div class="card styled-box-orange p-ripple" v-ripple>Orange</div>
-            <div class="card styled-box-purple p-ripple" v-ripple>Purple</div>
-        </div>
+    <div class="text-container">
+        hello
     </div>
     <div>
         <div class="card-container flex">
-            <div class="card primary-box p-ripple" v-ripple>Default</div>
-            <div class="card styled-box-green p-ripple" v-ripple>Green</div>
-            <div class="card styled-box-orange p-ripple" v-ripple>Orange</div>
-            <div class="card styled-box-purple p-ripple" v-ripple>Purple</div>
+            <div @click="showGoToLink()" class="card styled-box-green p-ripple" v-ripple>Green</div>
         </div>
     </div>
-    hello world
-    
-    hello
+
   </div>
 </template>
 
@@ -45,14 +40,24 @@ export default {
 }
 .main-container {
   height: 500px;
-  width: 700px;
-  background: blue;
+  width: 900px;
+  background-color: rgb(187, 187, 243);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+.text-container{
+        width: 500px;
+        height: 300px;
+        background: #2735b0;
+    }
 
 ::v-deep(.card-container) {
     .card {
-        width: 75px;
-        height: 75px;
+        cursor: pointer;
+        width: 85px;
+        height: 10px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -60,7 +65,7 @@ export default {
         user-select: none;
         padding: 0;
         background: #ffffff;
-        padding: 2rem;
+        padding: 1rem;
         box-shadow: 0 2px 1px -1px rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 3px 0 rgba(0,0,0,.12);
         border-radius: 4px;
         margin-bottom: 2rem;
@@ -72,8 +77,10 @@ export default {
         }
 
         &.styled-box-green {
+            margin-top: 5px;
+            background: #9c27b0;
             .p-ink {
-                background: rgba(#4baf50, 0.3);
+                background: rgba(#ffffff, 0.3);
             }
         }
 
@@ -95,4 +102,8 @@ export default {
     }
 }    
 
+
+body {
+  margin: 0
+}
 </style>

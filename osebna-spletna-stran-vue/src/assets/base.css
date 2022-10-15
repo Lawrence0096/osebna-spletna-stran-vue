@@ -54,14 +54,24 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0!important;
   position: relative;
   font-weight: normal;
 }
 
-html {
-  scroll-behavior: smooth;
+
+body {
+  margin: 0%!important;
 }
+
+
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+
+html,body{margin:0;padding:0}
 
 body {
   min-height: 100vh;
@@ -75,4 +85,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0px!important;
+
 }

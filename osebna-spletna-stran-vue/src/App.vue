@@ -1,30 +1,26 @@
 <template>
   <div>
-
     <div v-if="!isScreenSizeMobile">
       <Header
         :headers="data"
         @clicked-show-detail="clickedShowDetailModal"
       ></Header>
       <Cover></Cover>
-      <!--<a href="#sec-3">Section 3</a>-->
-
-      <div class="resume-container">
+      <button @click="scroll()">x</button>
+      <div id="O meni" class="resume-container">
         <Resume></Resume>
       </div>
-
-      <Button>x</Button>
-
-      <div style="height: 500px; width: 100%; background-color: green"></div>
-      <div style="height: 500px; width: 100%; background-color: gray"></div>
-      <div style="height: 500px; width: 100%; background-color: blue"></div>
-      <div style="height: 500px; width: 100%; background-color: red"></div>
-      <div style="height: 500px; width: 100%; background-color: green"></div>
-      <div style="height: 500px; width: 100%; background-color: gray"></div>
+      <div id="Izobrazba in izkušnje" style="height: 4000px; width: 100%; background-color: black">
+        <Exp></Exp>
+      </div>
+      <div id="Znanja in projekti" style="height: 3000px; width: 100%; background-color: #ffffff">
+        <Projects></Projects>
+      </div>
       <div
-        id="sec-3"
+        id="Kontakt"
         style="height: 500px; width: 100%; background-color: blue"
       ></div>
+      <div style="height: 50px; width: 100%; background-color: black"></div>
     </div>
   </div>
 </template>
@@ -38,19 +34,34 @@ import Header from "./components/header.vue";
 //@ts-ignore
 import Cover from "./components/cover.vue";
 import Resume from "./components/resume.vue";
-import Button from 'primevue/button';
-
-
+import Exp from "./components/exp.vue";
+import Button from "primevue/button";
+import Projects from "./components/projects.vue";
 
 export default {
   name: "app",
   methods: {
+    scroll() {
+      const id = "sec-3";
+      const yOffset = -70;
+      const element = document.getElementById(id);
+      const y =
+        element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    },
+
     buttonClick() {
       this.isScreenSizeMobile = !this.isScreenSizeMobile;
       console.log(this.isScreenSizeMobile);
     },
     clickedShowDetailModal(e: string) {
       console.log(e);
+      const id = e;
+      const yOffset = -70;
+      const element = document.getElementById(id);
+      const y =
+        element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
     },
     checkScreenSizeOnInit() {
       if (window.screen.width < 601) {
@@ -67,6 +78,8 @@ export default {
     Cover,
     Resume,
     Button,
+    Exp,
+    Projects,
   },
 
   mounted() {
@@ -98,15 +111,20 @@ export default {
 </script>
 
 
-<style scoped>
+<style>
+html {
+  scroll-behavior: smooth !important;
+}
 
-  .resume-container{
-    height: 700px; 
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-  }
+body {
+  margin: 0;
+}
+.resume-container {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 </style>
 

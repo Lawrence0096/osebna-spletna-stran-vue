@@ -9,7 +9,7 @@
     </div>
    <div class="personal-info">
      <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
-      <div style="width: 270px; line-height: 2;">
+      <div style="width: 270px; line-height: 1;" class="text-container">
         <p>Inženir Infromatike, medijski tehnik</p>
         <p>IT engineer, Front-end web Developement, Multimedia designer</p>
         <p>Šentjur pri Celju</p>
@@ -66,6 +66,11 @@ export default {
 
 
 
+    .text-container{
+      margin-top: 10px;
+      font-family: "Roboto", sans-serif;
+    }
+
     .header-picture {
     background-image: url(../assets/imgs/279547.webp);
     background-size: contain;
@@ -86,6 +91,9 @@ export default {
     text-align: center;
     align-items: center;
     }
+    body {
+  margin: 0
+}
 
     .hp-text-container {
     margin-bottom: 20px;
