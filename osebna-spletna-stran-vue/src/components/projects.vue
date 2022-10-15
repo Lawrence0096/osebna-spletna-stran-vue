@@ -19,7 +19,7 @@ export default {
     </div>
     <Card>
       <template #header>
-        <img alt="user header" src="demo/images/usercard.png" />
+        
       </template>
       <template #title> Advanced Card </template>
       <template #content>
@@ -34,7 +34,7 @@ export default {
 
     <Card>
       <template #header>
-        <img alt="user header" src="demo/images/usercard.png" />
+        
       </template>
       <template #title> Advanced Card </template>
       <template #content>
@@ -48,7 +48,7 @@ export default {
 
     <Card>
       <template #header>
-        <img alt="user header" src="demo/images/usercard.png" />
+        
       </template>
       <template #title> Advanced Card </template>
       <template #content>
@@ -62,7 +62,7 @@ export default {
 
     <Card>
       <template #header>
-        <img alt="user header" src="demo/images/usercard.png" />
+        
       </template>
       <template #title> Advanced Card </template>
       <template #content>
