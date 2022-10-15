@@ -1,32 +1,3 @@
-<template>
-  <div>
-    <div v-if="!isScreenSizeMobile">
-      <Header
-        :headers="data"
-        @clicked-show-detail="clickedShowDetailModal"
-      ></Header>
-      <Cover></Cover>
-      <button @click="scroll()">x</button>
-      <div id="O meni" class="resume-container">
-        <Resume></Resume>
-      </div>
-      <div id="Izobrazba in izkušnje" style="height: 4000px; width: 100%; background-color: black">
-        <Exp></Exp>
-      </div>
-      <div id="Znanja in projekti" style="height: 3000px; width: 100%; background-color: #ffffff">
-        <Projects></Projects>
-      </div>
-      <div
-        id="Kontakt"
-        style="height: 500px; width: 100%; background-color: blue"
-      ></div>
-      <div style="height: 50px; width: 100%; background-color: black"></div>
-    </div>
-  </div>
-</template>
-
-
-
 <script  lang="ts">
 import { RouterLink, RouterView } from "vue-router";
 //@ts-ignore
@@ -41,19 +12,11 @@ import Projects from "./components/projects.vue";
 export default {
   name: "app",
   methods: {
-    scroll() {
-      const id = "sec-3";
-      const yOffset = -70;
-      const element = document.getElementById(id);
-      const y =
-        element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    },
-
     buttonClick() {
       this.isScreenSizeMobile = !this.isScreenSizeMobile;
       console.log(this.isScreenSizeMobile);
     },
+
     clickedShowDetailModal(e: string) {
       console.log(e);
       const id = e;
@@ -63,6 +26,7 @@ export default {
         element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     },
+    
     checkScreenSizeOnInit() {
       if (window.screen.width < 601) {
         this.isScreenSizeMobile = true;
@@ -110,6 +74,32 @@ export default {
 };
 </script>
 
+
+<template>
+  <div>
+    <div v-if="!isScreenSizeMobile">
+      <Header
+        :headers="data"
+        @clicked-show-detail="clickedShowDetailModal"
+      ></Header>
+      <Cover></Cover>
+      <div id="O meni" class="resume-container">
+        <Resume></Resume>
+      </div>
+      <div id="Izobrazba in izkušnje" style="height: 4000px; width: 100%; background-color: black">
+        <Exp></Exp>
+      </div>
+      <div id="Znanja in projekti" style="height: 3000px; width: 100%; background-color: #ffffff">
+        <Projects></Projects>
+      </div>
+      <div
+        id="Kontakt"
+        style="height: 500px; width: 100%; background-color: blue"
+      ></div>
+      <div style="height: 50px; width: 100%; background-color: black"></div>
+    </div>
+  </div>
+</template>
 
 <style>
 html {
