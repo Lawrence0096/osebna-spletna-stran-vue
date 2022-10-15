@@ -49,7 +49,7 @@ export default {
     </div>
     <Card>
       <template #header>
-        
+        hello
       </template>
       <template #title> Advanced Card </template>
       <template #content>
