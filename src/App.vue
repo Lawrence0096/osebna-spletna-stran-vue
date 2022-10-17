@@ -1,5 +1,4 @@
 <script  lang="ts">
-import { RouterLink, RouterView } from "vue-router";
 //@ts-ignore
 import Header from "./components/header.vue";
 //@ts-ignore
@@ -8,6 +7,7 @@ import Resume from "./components/resume.vue";
 import Exp from "./components/exp.vue";
 import Button from "primevue/button";
 import Projects from "./components/projects.vue";
+
 
 export default {
   name: "app",
@@ -78,6 +78,9 @@ export default {
 <template>
   <div>
     <div v-if="!isScreenSizeMobile">
+
+
+
       <Header
         :headers="data"
         @clicked-show-detail="clickedShowDetailModal"
@@ -110,11 +113,13 @@ body {
   margin: 0;
 }
 .resume-container {
-  height: 700px;
+  height: 600px;
   width: 100%;
-  display: flex;
+
+ /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
+  background: #C9D6DF;
 }
 </style>
 

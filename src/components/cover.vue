@@ -55,7 +55,7 @@ export default {
 <style lang="css" scoped>
     .header {
     display: flex;
-    height: 500px;
+    height: 600px;
     margin-top: 80px;
     position: relative;
 
@@ -72,10 +72,10 @@ export default {
     }
 
     .header-picture {
-    background-image: url(../assets/imgs/279547.webp);
+    background-image: url(../assets/imgs/2581470.jpg);
     background-size: contain;
     background-size: cover;
-    color: white;
+    
     display: flex;
     align-items: flex-end;
     }
@@ -97,6 +97,7 @@ export default {
 
     .hp-text-container {
     margin-bottom: 20px;
+    line-height: 1.5;
     }
 
     #n3 {
@@ -121,13 +122,19 @@ export default {
     #n1,
     #n2,
     #n3 {
-    margin-left: 15px;
+    margin-left: 265px;
     }
 
-    .cv-img {
-    height: 170px;
-    width: 150px;
+    .cv-img{
+    height: 236px;
+    width: 210px;
     border-radius: 50%;
     margin-top: 30px;
-    }
+}
+
+    
+
+
+
+
 </style>
