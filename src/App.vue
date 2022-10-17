@@ -68,6 +68,20 @@ export default {
         "Kontakt",
       ],
       isScreenSizeMobile: false,
+      value1: 'Off',
+            value2: null,
+            value3: null,
+            options: ['Off', 'On'],
+            paymentOptions: [
+                {name: 'Option 1', value: 1},
+                {name: 'Option 2', value: 2},
+                {name: 'Option 3', value: 3}
+            ],
+            justifyOptions: [
+                {icon: 'pi pi-align-left', value: 'Left'},
+                {icon: 'pi pi-align-right', value: 'Right'},
+                {icon: 'pi pi-align-center', value: 'Center'},
+                {icon: 'pi pi-align-justify', value: 'Justify'}]
     };
   },
 };
@@ -105,6 +119,36 @@ export default {
     <option v-for="locale in $i18n.availableLocales" :key="locale">{{ locale }}</option>
   </select>
         <p>{{ $t("message.hello") }}</p>
+
+        <div>
+        <h5 id="single">Single Selection</h5>
+        <SelectButton   aria-labelledby="single" />
+
+        <h5 id="multiple">Multiple Selection</h5>
+        <SelectButton  optionLabel="name" multiple aria-labelledby="multiple" />
+
+        <h5 id="custom">Custom Content</h5>
+        <SelectButton optionLabel="value" dataKey="value" aria-labelledby="custom">
+            <template #option="slotProps">
+                <i :class="slotProps.option.icon"></i>
+            </template>
+        </SelectButton>
+
+        <div>
+        <h5 id="single">Single Selection</h5>
+        <SelectButton v-model="value1" :options="options" aria-labelledby="single" />
+
+        <h5 id="multiple">Multiple Selection</h5>
+        <SelectButton v-model="value2" :options="paymentOptions" optionLabel="name" multiple aria-labelledby="multiple" />
+
+        <h5 id="custom">Custom Content</h5>
+        <SelectButton v-model="value3" :options="justifyOptions" optionLabel="value" dataKey="value" aria-labelledby="custom">
+            <template #option="slotProps">
+                <i :class="slotProps.option.icon"></i>
+            </template>
+        </SelectButton>
+    </div>
+    </div>
       </div>
       <div style="height: 50px; width: 100%; background-color: black"></div>
     </div>
