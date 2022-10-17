@@ -8,7 +8,6 @@ import Exp from "./components/exp.vue";
 import Button from "primevue/button";
 import Projects from "./components/projects.vue";
 
-
 export default {
   name: "app",
   methods: {
@@ -26,7 +25,7 @@ export default {
         element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     },
-    
+
     checkScreenSizeOnInit() {
       if (window.screen.width < 601) {
         this.isScreenSizeMobile = true;
@@ -78,9 +77,6 @@ export default {
 <template>
   <div>
     <div v-if="!isScreenSizeMobile">
-
-
-
       <Header
         :headers="data"
         @clicked-show-detail="clickedShowDetailModal"
@@ -89,16 +85,27 @@ export default {
       <div id="O meni" class="resume-container">
         <Resume></Resume>
       </div>
-      <div id="Izobrazba in izkušnje" style="height: 4000px; width: 100%; background-color: black">
+      <div
+        id="Izobrazba in izkušnje"
+        style="height: 4000px; width: 100%; background-color: black"
+      >
         <Exp></Exp>
       </div>
-      <div id="Znanja in projekti" style="height: 3000px; width: 100%; background-color: #ffffff">
+      <div
+        id="Znanja in projekti"
+        style="height: 3000px; width: 100%; background-color: #ffffff"
+      >
         <Projects></Projects>
       </div>
       <div
         id="Kontakt"
         style="height: 500px; width: 100%; background-color: blue"
-      ></div>
+      >
+      <select v-model="$i18n.locale">
+    <option v-for="locale in $i18n.availableLocales" :key="locale">{{ locale }}</option>
+  </select>
+        <p>{{ $t("message.hello") }}</p>
+      </div>
       <div style="height: 50px; width: 100%; background-color: black"></div>
     </div>
   </div>
@@ -116,10 +123,10 @@ body {
   height: 600px;
   width: 100%;
 
- /* display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;*/
-  background: #C9D6DF;
+  background: #c9d6df;
 }
 </style>
 
