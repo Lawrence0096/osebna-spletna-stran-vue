@@ -101,16 +101,23 @@ export default {
       </div>
       <div
         id="Izobrazba in izkušnje"
-        style="height: 4000px; width: 100%; background-color: black"
+        style="height: 450px; width: 100%; background-color: rgb(174 215 248);"
       >
         <Exp></Exp>
       </div>
       <div
         id="Znanja in projekti"
-        style="height: 3000px; width: 100%; background-color: #ffffff"
+        style="height: 700px; width: 100%; background-color: rgb(174 215 248)"
       >
         <Projects></Projects>
       </div>
+      <div
+        id=""
+        style="height: 700px; width: 100%; background-color: #e6dace"
+      >
+      </div>
+
+
       <div
         id="Kontakt"
         style="height: 500px; width: 100%; background-color: blue"
@@ -170,7 +177,7 @@ body {
   /* display: flex;
   align-items: center;
   justify-content: center;*/
-  background: #c9d6df;
+  background: #d1dee8;
 }
 </style>
 

@@ -14,73 +14,32 @@ export default {
 
 <template>
   <div class="exp-container">
-    <div class="header">
-      <h1>Znanja</h1>
-    </div>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
+    <Card style="margin-top: 100px">
+      <template #header> </template>
+      <template #title>Znanja</template>
       <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
+        <div class="text-container">
+          <p style="margin-top: 0px">
+            • Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015
+          </p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+        </div>
       </template>
-      <template #footer> hello </template>
     </Card>
-
-
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-
- 
   </div>
 </template>
 
 <style lang="scss" scoped>
 .p-card {
-  width: 900px;
+  width: 1261px;
+  background: #e9f1f1;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
 }
 
@@ -97,14 +56,22 @@ export default {
 }
 
 .header {
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
   text-align: left;
   color: rgb(77, 75, 75);
   font-size: 16px;
 }
 body {
-  margin: 0
+  margin: 0;
 }
 
+.text-container{
+  line-height: 1.5;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
 </style>

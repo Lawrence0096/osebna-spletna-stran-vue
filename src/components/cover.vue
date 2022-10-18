@@ -16,19 +16,6 @@
         <p>lovro.mackosek@gmail.com</p>
         <p>070 346 952</p>
       </div>
-      <h5 id="single">Single Selection</h5>
-      <h5 id="single">Single Selection</h5>
-        <SelectButton v-model="value1" :options="options" aria-labelledby="single" />
-
-        <h5 id="multiple">Multiple Selection</h5>
-        <SelectButton v-model="value2" :options="paymentOptions" optionLabel="name" multiple aria-labelledby="multiple" />
-
-        <h5 id="custom">Custom Content</h5>
-        <SelectButton v-model="value3" :options="justifyOptions" optionLabel="value" dataKey="value" aria-labelledby="custom">
-            <template #option="slotProps">
-                <i :class="slotProps.option.icon"></i>
-            </template>
-        </SelectButton>
   
     </div>
    <!-- <div class="about-me">
@@ -98,7 +85,7 @@ export default {
 
     .personal-info {
     min-width: 300px!important;
-    background-color: #585450;
+    background-color: #40464b;
     color: white;
     font-size: 15px;
     display: flex;

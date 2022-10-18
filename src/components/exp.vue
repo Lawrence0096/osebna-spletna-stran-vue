@@ -14,137 +14,45 @@ export default {
 
 <template>
   <div class="exp-container">
-    <div class="header">
-      <h1>Header</h1>
-    </div>
-    <Card>
-      <template #header>
+    
+    <Card style="margin-top: 100px">
+      <template #title>Izobrazba</template>
+      <template  #content>
+        <div style="line-height: 1.5; font-size: 20px;">
+          <p style="margin-top: -5px">• Medijski tehnik</p>
+          <p>• Inženir informatike</p>
+        </div>
         
       </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
     </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
+    <Card style="margin-top: 100px">
+      <template #title>Izkušnje</template>
       <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
+        <div style="line-height: 1.5; font-size: 18px; ">
+          <p style="margin-top: -5px">• Delo v foto studiju (FotoPeter s.p.) 05/2014 do 09/2014</p>
+            <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+            <p>• Pomoč pri organizaciji prireditev (Drago Mackošek s.p.) 2015-2020</p>
+            <p>• Občasno oblikovanje grafičnih podob (Drago Mackošeks.p.) 2015-2020</p>
+            <p>• Delo na radiju (Radio Štarjerski val d.o.o.) 04/2019 do 08/ 2019</p>
+            <p>• Popravljanje računalnikov (INVOICE d.o.o.) 01/2021 do 03 2021.</p>
+
+        </div>
+            
       </template>
-      <template #footer> hello </template>
     </Card>
 
-    <div class="header">
-      <h1>Header</h1>
-    </div>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
-    <Card>
-      <template #header>
-        <span id="header">hello</span>
-      </template>
-      <template #title> Advanced Card </template>
-      <template #content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed
-        consequuntur error repudiandae numquam deserunt quisquam repellat libero
-        asperiores earum nam nobis, culpa ratione quam perferendis esse,
-        cupiditate neque quas!
-      </template>
-      <template #footer> hello </template>
-    </Card>
   </div>
+
+  
+  
 </template>
 
 <style lang="scss" scoped>
 .p-card {
-  width: 700px;
+  width: 600px;
+  color: black;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  background: #e9f1f1;
 }
 
 #header {
@@ -153,10 +61,15 @@ export default {
 
 .exp-container {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
+  gap: 60px;
   justify-content: center;
-  align-items: center;
+
+}
+
+
+
+.p-card .p-card-content {
+    padding: 0rem 0!important;
 }
 
 .header {
@@ -168,6 +81,11 @@ font-family: Arial, Helvetica, sans-serif;
 }
 body {
   margin: 0
+}
+
+p {
+  
+  font-family: "Nunito Sans", sans-serif;
 }
 
 </style>

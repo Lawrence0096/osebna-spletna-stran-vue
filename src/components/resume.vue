@@ -122,7 +122,6 @@ export default {
 .test {
   width: 90%;
   margin-top: 30px;
-  background-color: #c9d6df;
 }
 
 .test h1 {
