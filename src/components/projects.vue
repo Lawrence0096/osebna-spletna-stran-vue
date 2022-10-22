@@ -19,17 +19,14 @@ export default {
       <template #title>Znanja</template>
       <template #content>
         <div class="text-container">
-          <p style="margin-top: 0px">
-            • Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015
-          </p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-          <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          <div>
+            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          </div>
+          <div>
+            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+          </div>
         </div>
       </template>
     </Card>
@@ -68,6 +65,8 @@ body {
 
 .text-container{
   line-height: 1.5;
+  gap: 40px;
+  display: flex;
 }
 
 p {

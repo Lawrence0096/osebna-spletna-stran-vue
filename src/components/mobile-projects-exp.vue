@@ -2,7 +2,7 @@
 
 <script>
 export default {
-  name: "Projects-exp",
+  name: "mobile-projects-exp",
   components: {},
   directives: {},
   methods: {},
@@ -51,17 +51,16 @@ export default {
 .project-container {
     margin-top: 50px;
     display: flex;
+    flex-direction: column;
     gap: 10px;
 }
 
 .project-text {
-    height: 400px;
     width: 100%;
-
 }
 
 .project-pic {
-    height: 400px;
+    height: 200px;
     width: 100%;
     background-image: url(../assets/imgs/project-1.1.png);
 }

@@ -1,6 +1,6 @@
 <script  lang="ts">
 //@ts-ignore
-import Header from "./components/header.vue";
+import NavBar from "./components/nav-bar.vue";
 //@ts-ignore
 import Cover from "./components/cover.vue";
 import Resume from "./components/resume.vue";
@@ -8,6 +8,10 @@ import Exp from "./components/exp.vue";
 import Button from "primevue/button";
 import Projects from "./components/projects.vue";
 import ProjectsExp from "./components/projects-exp.vue";
+import MobileNavBar from "./components/mobile-nav-bar.vue";
+import MobileCover from "./components/mobile-cover.vue";
+import MobileExp from "./components/mobile-exp.vue";
+import MobileProjectsExp from "./components/mobile-projects-exp.vue";
 
 export default {
   name: "app",
@@ -27,6 +31,22 @@ export default {
       window.scrollTo({ top: y, behavior: "smooth" });
     },
 
+    clickedShowFullPanel(e: string) {
+       this.visibleFull = true
+    },
+
+    showSpecifilMobileSection(e: any){
+      this.visibleFull = false;
+      console.log(e);
+      const id = e;
+      const yOffset = -70;
+      const element = document.getElementById(id);
+      const y =
+        element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+      
+    },
+
     checkScreenSizeOnInit() {
       if (window.screen.width < 601) {
         this.isScreenSizeMobile = true;
@@ -38,14 +58,18 @@ export default {
     },
   },
   components: {
-    Header,
+    NavBar,
     Cover,
     Resume,
     Button,
     Exp,
     Projects,
     ProjectsExp,
-  },
+    MobileNavBar,
+    MobileCover,
+    MobileExp,
+    MobileProjectsExp
+},
 
   mounted() {
     this.checkScreenSizeOnInit();
@@ -95,10 +119,10 @@ export default {
 <template>
   <div>
     <div v-if="!isScreenSizeMobile">
-      <Header
+      <NavBar
         :headers="data"
         @clicked-show-detail="clickedShowDetailModal"
-      ></Header>
+      ></NavBar>
       <Cover></Cover>
       <div id="O meni" class="resume-container">
         <Resume></Resume>
@@ -117,7 +141,7 @@ export default {
       </div>
       <div id="" style="width: 100%; background-color: #e6dace">
         <ProjectsExp></ProjectsExp>
-        <br>
+        <br />
         <div class="test4">
           <h1>Grafični izdelki</h1>
           <div class="row">
@@ -143,39 +167,96 @@ export default {
           </div>
         </div>
       </div>
-      <div style="
-          height: 20px;
-          width: 100%;
-          background-color: #f0f5f9;
-        "></div>
+      <div style="height: 20px; width: 100%; background-color: #f0f5f9"></div>
       <div
         id="Kontakt"
-        style="
-          height: 160px;
-          width: 100%;
-          background-color: #f0f5f9;
-        "
+        style="height: 160px; width: 100%; background-color: #f0f5f9"
         class="contact-container"
       >
-      <p style="margin-top: -30px; font-weight: 500; font-size: 22px;">Kontakt:</p>
-          <p id="p2">Lovro Mackošek</p>
-          <p id="p4">Telefon: 070 346 952</p>
-          <p id="p5">Email: lovro.mackosek@gmail.com</p>
-          
-    </div>
-    <br>
+        <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
+          Kontakt:
+        </p>
+        <p id="p2">Lovro Mackošek</p>
+        <p id="p4">Telefon: 070 346 952</p>
+        <p id="p5">Email: lovro.mackosek@gmail.com</p>
+      </div>
+      <br />
 
-      <div style="height: 50px; width: 100%; margin-top: -20px; display: flex; justify-content: center; background-color: black">
+      <div
+        style="
+          height: 50px;
+          width: 100%;
+          margin-top: -20px;
+          display: flex;
+          justify-content: center;
+          background-color: black;
+        "
+      >
         <p style="color: white">© 2022 ustvaril Lovro Mackošek</p>
       </div>
     </div>
-    <div v-if="isScreenSizeMobile">
 
-      <Button icon="pi pi-th-large" @click="visibleFull = true"  />
-      <Sidebar v-model:visible="visibleFull" :baseZIndex="10000" position="full">
-            <h3>Full Screen</h3>
-        </Sidebar>
-    
+    <!--mobile sidenav-->
+    <div v-if="isScreenSizeMobile">
+      <MobileNavBar @clicked-show-detail="clickedShowFullPanel"></MobileNavBar>
+      <Sidebar
+        v-model:visible="visibleFull"
+        :baseZIndex="10000"
+        position="full"
+      >
+        <div class="mobile-navigation-bar">
+          <span v-on:click="showSpecifilMobileSection(item)" style="margin-top: 20px" id="nav-title" v-for="item in data" :key="item">
+            {{ item }}
+          </span>
+        </div>
+      </Sidebar>
+      <MobileCover></MobileCover>
+      <Resume></Resume>
+      <MobileExp></MobileExp>
+      <MobileProjectsExp id="Kontakt"></MobileProjectsExp>
+      <div class="test4">
+          <h1>Grafični izdelki</h1>
+          <div class="row">
+            <div class="column">
+              <img src="./assets/New folder/1.png" style="width: 100%" />
+              <img src="./assets/New folder/2.jpg" style="width: 100%" />
+              <img src="./assets/New folder/3.jpg" style="width: 100%" />
+              <img src="./assets/New folder/13.jpg" style="width: 100%" />
+            </div>
+            <div class="column">
+              <img src="./assets/New folder/4.jpg" style="width: 100%" />
+              <img src="./assets/New folder/5.jpg" style="width: 100%" />
+              <img src="./assets/New folder/6.jpg" style="width: 100%" />
+              <img src="./assets/New folder/7.jpg" style="width: 100%" />
+              <img src="./assets/New folder/12.jpg" style="width: 100%" />
+            </div>
+            <div class="column">
+              <img src="./assets/New folder/8.jpg" style="width: 100%" />
+              <img src="./assets/New folder/9.jpg" style="width: 100%" />
+              <img src="./assets/New folder/10.jpg" style="width: 100%" />
+              <img src="./assets/New folder/11.jpg" style="width: 100%" />
+            </div>
+          </div>
+        </div>
+
+
+
+
+      <br>
+      <br>
+
+      <div
+        style="
+          height: 50px;
+          width: 100%;
+          margin-top: -20px;
+          display: flex;
+          justify-content: center;
+          background-color: black;
+        "
+      >
+        <p style="color: white">© 2022 ustvaril Lovro Mackošek</p>
+      </div>
     </div>
   </div>
 </template>
@@ -185,6 +266,21 @@ html {
   scroll-behavior: smooth !important;
 }
 
+
+.mobile-navigation-bar{
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 25px;
+  text-align: center;
+}
+
+#nav-title:hover {
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+}
+
 .contact-container {
   margin-top: 30px;
   line-height: 1;
@@ -192,7 +288,6 @@ html {
   text-align: center;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-
 }
 
 #p1 {

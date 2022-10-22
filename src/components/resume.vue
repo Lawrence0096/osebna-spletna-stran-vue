@@ -61,7 +61,7 @@ export default {
 }
 
 .text-container {
-  font-size: 16px;
+
   display: flex;
   justify-content: center;
 }
@@ -140,4 +140,10 @@ export default {
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
 }
+
+@media screen and (max-width: 600px) {  .test p {
+    font-size: 14px;
+  }
+}
+
 </style>

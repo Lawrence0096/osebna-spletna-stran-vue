@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "Header",
+  name: "Nav-bar",
   props: {
     headers: String,
   },
