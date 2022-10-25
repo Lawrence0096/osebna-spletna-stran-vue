@@ -36,12 +36,22 @@ export default {
 <style lang="scss" scoped>
 .p-card {
   width: 1261px;
-  background: #e9f1f1;
+  background: white;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+  color: black;
+}
+
+.p-card-title {
+    color: #2196F3!important;
 }
 
 #header {
   margin-left: 10px;
+  color: #2196F3!important;
+}
+
+#title {
+  color: #2196F3!important;
 }
 
 .exp-container {
@@ -56,7 +66,7 @@ export default {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0px;
   text-align: left;
-  color: rgb(77, 75, 75);
+
   font-size: 16px;
 }
 body {

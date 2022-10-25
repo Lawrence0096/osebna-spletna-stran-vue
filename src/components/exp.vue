@@ -52,8 +52,18 @@ export default {
   width: 600px;
   color: black;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
-  background: #e9f1f1;
+  background: white;
 }
+
+
+.p-card .p-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #2196F3;
+}
+
+/*#2196F3*/ 
 
 #header {
   margin-left: 10px;

@@ -3,7 +3,7 @@
     <div class="personal-info">
       <div style="width: 270px;  line-height: 1" class="text-container">
         <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
-        <p>Lovro Mackošek</p>
+        <h2>Lovro Mackošek</h2>
         <p>Inženir Infromatike, medijski tehnik</p>
         <p>IT engineer, Front-end web Developement, Multimedia designer</p>
         <p>Šentjur pri Celju</p>

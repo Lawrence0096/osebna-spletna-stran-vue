@@ -64,7 +64,7 @@ export default {
   width: 90%;
   color: black;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
-  background: #e9f1f1;
+  background: white;
 }
 
 #header {

@@ -129,17 +129,12 @@ export default {
       </div>
       <div
         id="Izobrazba in izkušnje"
-        style="height: 450px; width: 100%; background-color: #f0f5f9"
+        style="height: 1150px; width: 100%; background-color: rgb(217 217 217);"
       >
         <Exp></Exp>
-      </div>
-      <div
-        id="Znanja in projekti"
-        style="height: 700px; width: 100%; background-color: #f0f5f9"
-      >
         <Projects></Projects>
       </div>
-      <div id="" style="width: 100%; background-color: #e6dace">
+      <div id="" style="width: 100%; background-color: white">
         <ProjectsExp></ProjectsExp>
         <br />
         <div class="test4">
@@ -180,13 +175,13 @@ export default {
         <p id="p4">Telefon: 070 346 952</p>
         <p id="p5">Email: lovro.mackosek@gmail.com</p>
       </div>
-      <br />
+   
 
       <div
         style="
           height: 50px;
           width: 100%;
-          margin-top: -20px;
+          margin-top: -10px;
           display: flex;
           justify-content: center;
           background-color: black;
@@ -211,8 +206,16 @@ export default {
         </div>
       </Sidebar>
       <MobileCover></MobileCover>
-      <Resume></Resume>
-      <MobileExp></MobileExp>
+
+      <div style="padding-bottom: 50px">
+        <Resume></Resume>
+      </div>
+
+
+      <div style="background-color: #d9d9d9; padding-top: 5px; padding-bottom: 40px; ">
+        <MobileExp></MobileExp>
+      </div>
+
       <MobileProjectsExp id="Kontakt"></MobileProjectsExp>
       <div class="test4">
           <h1>Grafični izdelki</h1>
@@ -242,14 +245,11 @@ export default {
 
 
 
-      <br>
-      <br>
-
       <div
         style="
           height: 50px;
           width: 100%;
-          margin-top: -20px;
+
           display: flex;
           justify-content: center;
           background-color: black;
@@ -281,6 +281,11 @@ html {
   cursor: pointer;
 }
 
+
+#Izobrazba in izkušnje{
+  background: url(./assets/imgs/bg.jpg);
+}
+
 .contact-container {
   margin-top: 30px;
   line-height: 1;
@@ -304,11 +309,11 @@ body {
   /* display: flex;
   align-items: center;
   justify-content: center;*/
-  background: #d1dee8;
+  background: white;
 }
 
 .test4 {
-  background-color: #c9d6df;
+  background-color: #d9d9d9;
   padding-bottom: 20px;
 }
 
