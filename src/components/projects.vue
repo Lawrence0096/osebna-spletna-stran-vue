@@ -16,16 +16,27 @@ export default {
   <div class="exp-container">
     <Card style="margin-top: 100px">
       <template #header> </template>
-      <template #title>Znanja</template>
+      <template #title>Znanja in zanimanja</template>
       <template #content>
         <div class="text-container">
           <div>
-            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+           <b>Znanja</b> 
+            <p data-v-ca268c73="">• HTML, CSS, JavaScript</p>
+            <p data-v-ca268c73="">• Ogrodje Angular</p>
+            <p>• Poznavanje ogrodja Vue in React (prevsem Vue)</p>
+            <p>• Delanje z REST klici</p>
+            <p>• Delo z gitom in gitlabom/githubom</p>
+            <p>• Ustvarjanje UI/UX rešitev</p>
+            <p>• Delanje z Adobe Suitom (Photoshop, Illustrator, Premiere, Audition, XD)</p>
+            <p>• Računalniška podpora</p>
+            <p>• Delo z Mac, Windows ali Linux operacijskim sistemom</p>
           </div>
           <div>
-            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-            <p data-v-ca268c73="">• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
+           <b>Zanimanja</b> 
+            <p data-v-ca268c73="">• Sistemska administracija</p>
+
+            <p data-v-ca268c73="">• CMS (Content Management System)</p>
+            <p>• Delo z wordpressom</p>
           </div>
         </div>
       </template>
@@ -35,7 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 .p-card {
-  width: 1261px;
+  width: 1070px;
   background: white;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
   color: black;

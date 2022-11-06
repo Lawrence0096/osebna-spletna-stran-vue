@@ -39,7 +39,7 @@ export default {
       this.visibleFull = false;
       console.log(e);
       const id = e;
-      const yOffset = -70;
+      const yOffset = -50;
       const element = document.getElementById(id);
       const y =
         element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
@@ -129,12 +129,12 @@ export default {
       </div>
       <div
         id="Izobrazba in izkušnje"
-        style="height: 1150px; width: 100%; background-color: rgb(217 217 217);"
+        style="height: 1350px; width: 100%; background-color: rgb(217 217 217);"
       >
         <Exp></Exp>
         <Projects></Projects>
       </div>
-      <div id="" style="width: 100%; background-color: white">
+      <div id="Znanja in projekti" style="width: 100%; background-color: white">
         <ProjectsExp></ProjectsExp>
         <br />
         <div class="test4">
@@ -207,16 +207,16 @@ export default {
       </Sidebar>
       <MobileCover></MobileCover>
 
-      <div style="padding-bottom: 50px">
+      <div id="O meni" style="padding-bottom: 50px">
         <Resume></Resume>
       </div>
 
 
-      <div style="background-color: #d9d9d9; padding-top: 5px; padding-bottom: 40px; ">
+      <div id="Izobrazba in izkušnje" style="background-color: #d9d9d9; padding-top: 5px; padding-bottom: 40px; ">
         <MobileExp></MobileExp>
       </div>
 
-      <MobileProjectsExp id="Kontakt"></MobileProjectsExp>
+      <MobileProjectsExp id="Znanja in projekti"></MobileProjectsExp>
       <div class="test4">
           <h1>Grafični izdelki</h1>
           <div class="row">
@@ -241,7 +241,18 @@ export default {
             </div>
           </div>
         </div>
-
+        <div
+        id="Kontakt"
+        style="height: 160px; width: 100%; padding-top:21px;"
+        class="contact-container"
+      >
+        <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
+          Kontakt:
+        </p>
+        <p id="p2">Lovro Mackošek</p>
+        <p id="p4">Telefon: 070 346 952</p>
+        <p id="p5">Email: lovro.mackosek@gmail.com</p>
+      </div>
 
 
 
@@ -258,7 +269,72 @@ export default {
         <p style="color: white">© 2022 ustvaril Lovro Mackošek</p>
       </div>
     </div>
+       <!-- <select v-model="$i18n.locale">
+          <option v-for="locale in $i18n.availableLocales" :key="locale">
+            {{ locale }}
+          </option>
+        </select>
+        <p>{{ $t("message.hello") }}</p>
+
+        <div>
+          <h5 id="single">Single Selection</h5>
+          <SelectButton aria-labelledby="single" />
+
+          <h5 id="multiple">Multiple Selection</h5>
+          <SelectButton
+            optionLabel="name"
+            multiple
+            aria-labelledby="multiple"
+          />
+
+          <h5 id="custom">Custom Content</h5>
+          <SelectButton
+            optionLabel="value"
+            dataKey="value"
+            aria-labelledby="custom"
+          >
+            <template #option="slotProps">
+              <i :class="slotProps.option.icon"></i>
+            </template>
+          </SelectButton>
+
+          <div>
+            <h5 id="single">Single Selection</h5>
+            <SelectButton
+              v-model="value1"
+              :options="options"
+              aria-labelledby="single"
+            />
+
+            <h5 id="multiple">Multiple Selection</h5>
+            <SelectButton
+              v-model="value2"
+              :options="paymentOptions"
+              optionLabel="name"
+              multiple
+              aria-labelledby="multiple"
+            />
+
+            <h5 id="custom">Custom Content</h5>
+            <SelectButton
+              v-model="value3"
+              :options="justifyOptions"
+              optionLabel="value"
+              dataKey="value"
+              aria-labelledby="custom"
+            >
+              <template #option="slotProps">
+                <i :class="slotProps.option.icon"></i>
+              </template>
+            </SelectButton>
+          </div>
+        </div> 
+--> 
+
+
+
   </div>
+
 </template>
 
 <style>
@@ -289,7 +365,6 @@ html {
 .contact-container {
   margin-top: 30px;
   line-height: 1;
-  background-color: #f0f5f9;
   text-align: center;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
@@ -303,7 +378,7 @@ body {
   margin: 0;
 }
 .resume-container {
-  height: 600px;
+  height: 650px;
   width: 100%;
 
   /* display: flex;

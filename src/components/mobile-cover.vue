@@ -37,13 +37,11 @@ export default {
 
 .header-picture {
   background-image: url(../assets/imgs/2581470.jpg);
-  background-size: contain;
   background-size: cover;
-
   display: flex;
   align-items: flex-end;
 }
-
+X
 .personal-info {
   width: 90%;
   background-color: #60696f;;

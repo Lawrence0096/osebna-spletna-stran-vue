@@ -35,7 +35,7 @@ export default {
             <p>• Občasno oblikovanje grafičnih podob (Drago Mackošeks.p.) 2015-2020</p>
             <p>• Delo na radiju (Radio Štarjerski val d.o.o.) 04/2019 do 08/ 2019</p>
             <p>• Popravljanje računalnikov (INVOICE d.o.o.) 01/2021 do 03 2021.</p>
-
+            <p>• Ustvarjanje spletnih aplikacij (Navteh d.o.o) 08/2021 do 10/2022 </p>
         </div>
             
       </template>
@@ -49,7 +49,7 @@ export default {
 
 <style lang="scss" scoped>
 .p-card {
-  width: 600px;
+  width: 500px;
   color: black;
   box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
   background: white;

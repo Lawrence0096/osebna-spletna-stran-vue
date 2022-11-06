@@ -15,7 +15,7 @@ export default {
       <h1 class="test">Projekti</h1>
       <div class="project-container">
         <div class="project-text">
-            <P>© 2021 ustvaril Lovro Mackošek</P>
+            <P>Praktični izdelek za diplomsko delo</P>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
         </div>
         <div class="project-pic"></div>
@@ -93,7 +93,7 @@ export default {
 .project-pic {
     height: 800px;
     width: 100%;
-    background-size: contain;
+    background-size: cover;
     background-image: url(../assets/imgs/webpic2.png);
 
 }
@@ -111,7 +111,7 @@ export default {
     height: 554px;
     width: 100%;
     background-image: url(../assets/imgs/webpic3.png);
-    background-size: contain;
+    background-size: cover;
 }
 .project-pic-4 {
     height: 600px;

@@ -76,7 +76,6 @@ export default {
 
     .header-picture {
     background-image: url(../assets/imgs/2581470.jpg);
-    background-size: contain;
     background-size: cover;
     
     display: flex;
@@ -129,8 +128,9 @@ export default {
     }
 
     .cv-img{
-    height: 236px;
-    width: 210px;
+
+    height: 183px;
+    width: 167px;
     border-radius: 50%;
     margin-top: 30px;
 }

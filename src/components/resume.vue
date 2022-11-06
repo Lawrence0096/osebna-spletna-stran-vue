@@ -27,24 +27,30 @@ export default {
         <h1>O meni</h1>
         <h2>MOJE OZADJE</h2>
         <p>
-          Zanimam se za delo na področju računalništva, saj je računalništvo že
-          dolga leta moja strast. Moje izobraževanje me je usposobilo za
-          <b>delo v informacijskem sistemu</b> , s tem pa lahko vašemu podjetju
-          nudim računalniško podporo in delo z različno programsko opremo. V
-          času mojega izobraževanja sem se naučil: ustvarjati nove uporabnike
-          (in jim dodeljevali pravice), dodajati in odstranjevati strojno
-          opremo, ustvarjati varnostne kopije, posodabljati in instalirati
-          programsko opremo, nadzorovati računalniški sistem, osnove upravljanja
-          z omrežjem in odpravljanje napak.
+          Zanimam se za delo v računalništvu, 
+          hkrati pa imam tudi strast za ustvarjanje 
+          interaktivnih multimedijskih vsebin. 
+          Po izobrazbi sem inzenir informatike (6. stopnja) in medijski tehnik. 
+          Moja zadnja zaposlitev je bila na področju programiranja, 
+          kjer smo ustvarjali spletne aplikacije z ogrodjem Angular 
+          (oglejte si opise mojih projektov).
+           V preteklosti sem pa delal kot računalniški podpornik (informatik), 
+           grafični oblikovalec in tehnik na radiju.
         </p>
         <p>
-          Za moje diplomsko delo sem se poglobil v razvoj spletnih strani, kjer
-          sem dobro spoznal računalniške jezike HTML, CSS in JavaScript in tako
-          da se tudi zanimam za <b>razvoj prednjega dela spletnih strani</b>,
-          čeprav raznorazna ogrodja kot so »react«, »vue.js«, so še vedno
-          noviteta zame . Prav tako pa znam
-          <b>ustvarjati multimedijsko vsebino</b> z aktualno programsko opremo
-          in imam občutek za design.
+          Kot informatik pa sem predvsem bil tehnični podpornik v podjetju, 
+          kjer sem predvsem pomagal uporabnikom, ter nameščal operacijski sisteme Windows 
+          na novih računalnikih.  V času mojega izobraževanja sem se naučil ustvarjati nove 
+          uporabnike (in jim dodeljevali pravice), dodajati in odstranjevati strojno opremo, 
+          ustvarjati varnostne kopije, posodabljati in instalirati programsko opremo, 
+          nadzorovati računalniški sistem, osnove upravljanja z omrežjem in odpravljanje napak.
+        </p>
+        <p>
+          Kot medijski tenhik/grafični oblikovalec, 
+          sem pa ustvarjal veliko različnih spletnih oglasov, 
+          grafičnih podob. 
+          Ko sem delal na radiju sem tudi ustvarjal različne promocijke videje, 
+          ter pomagal ustvarjati radijske oglase.
         </p>
       </div>
     </div>
