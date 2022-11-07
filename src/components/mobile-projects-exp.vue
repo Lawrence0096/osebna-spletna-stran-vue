@@ -15,16 +15,16 @@ export default {
       <h1 class="test">Projekti</h1>
       <div class="project-container">
         <div class="project-text">
-            <P>© 2021 ustvaril Lovro Mackošek</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
+          <b>Praktični izdelek za diplomsko delo</b>
+            <p>Za diplomsko delo sem ustvaril preprosto statično stran za namišljeno podjetje Argus. Spletna stran večinoma vsebuje HTML in CSS. Z JavaScriptom sem na spletni strani ustvaril navigacijo, preprosti kalkulator, zemljevid in prikazovalnik PDF-jev s pomočjo zunanje knjižnice.</p>
         </div>
         <div class="project-pic"></div>
       </div>
 
      <div class="project-container">
         <div class="project-text">
-          <P>© 2021 ustvaril Lovro Mackošek</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
+          <b>Aplikacija za podporo uporabnikom</b>
+          <p>Moj prvi projekt v angularju je bila preprosta spletna aplikacija, ki je bila namenjena za izboljšanje tehnične podpore. Uporabnik je videl najbolj ključne informacije stranke in različne statuse. Če se je pri stranki zgodila kakšna težava, je uporabnik videl določene informacije obarvane s specifično barvo. Informacije so se posodabljale vsakih petih minut. Ko je uporabnik videl določene probleme, je lahko to informacijo nazaj poslal na strežnik.</p>
 
         </div>
         <div class="project-pic-2"></div>
@@ -32,29 +32,17 @@ export default {
 
       <div class="project-container">
         <div class="project-text">
-          <P>© 2021 ustvaril Lovro Mackošek</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
+          <b>Aplikacija za prikazovanje vozil po Evropi</b>
+          <p>Moj drugi projekt v angularju, je bila bolj kompleksna aplikacija, kjer se uporabljala knjižnica Leaflet za prikazovanje lokacije posameznih vozil po Evropi. Uporabnik je lahko videl, kje se vozilo nahaja, ter pridobil specifične informacije o tistem vozilu, hkrati pa je v listi vozil lahko poiskal specifično vozilo, za katerega je imel interes, lahko je pa tudi sortiral listo vozil po določenih parametrih. Uporabnik je lahko tudi pošiljal določena sporočila tem vozilom, videl kakšne temperature so v tem vozilu in ustvarjal določena poročila za vozila. Uporabnik je lahko v aplikaciji tudi izbiral med tremi različnimi jeziki. Aplikacija je bila tudi prirejena za mobilno različico.</p>
 
         </div>
         <div class="project-pic-3"></div>
       </div>
 
       <div class="project-container">
-        <div class="project-text">
-          <P>© 2021 ustvaril Lovro Mackošek</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
-
-        </div>
         <div class="project-pic-4"></div>-
       </div>
-      <div class="project-container">
-        <div class="project-text">
-          <P>© 2021 ustvaril Lovro Mackošek</P>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio praesentium blanditiis, voluptate dolores omnis adipisci? Nobis numquam ullam aspernatur aliquid nostrum eligendi laboriosam eum ipsum, ipsa iusto? A iste incidunt animi praesentium nulla suscipit ipsa deleniti. Ad esse voluptatum placeat voluptate illo earum expedita ipsum tenetur eveniet! Sapiente ut fuga dignissimos amet fugiat qui libero ea quo officia dolore sunt nam nesciunt temporibus eaque, deserunt repudiandae reiciendis fugit cum, quaerat eius aperiam! Vel iusto modi commodi voluptate ut cumque adipisci quidem consequatur aperiam omnis quas, nostrum alias enim illum itaque sapiente voluptatum nobis, est placeat illo recusandae, asperiores nulla.</p>
-
-        </div>
-     
-      </div>
+      
 
     </div>
   </div>

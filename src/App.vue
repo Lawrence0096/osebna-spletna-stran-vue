@@ -90,7 +90,7 @@ export default {
       data: [
         "O meni",
         "Izobrazba in izkušnje",
-        "Znanja in projekti",
+        "Znanja",
         "Kontakt",
       ],
       isScreenSizeMobile: false,
@@ -134,7 +134,7 @@ export default {
         <Exp></Exp>
         <Projects></Projects>
       </div>
-      <div id="Znanja in projekti" style="width: 100%; background-color: white">
+      <div id="Znanja" style="width: 100%; background-color: #d0e2ff">
         <ProjectsExp></ProjectsExp>
         <br />
         <div class="test4">
@@ -167,6 +167,7 @@ export default {
         id="Kontakt"
         style="height: 160px; width: 100%; background-color: #f0f5f9"
         class="contact-container"
+
       >
         <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
           Kontakt:
@@ -174,6 +175,7 @@ export default {
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">Telefon: 070 346 952</p>
         <p id="p5">Email: lovro.mackosek@gmail.com</p>
+
       </div>
    
 
@@ -187,7 +189,7 @@ export default {
           background-color: black;
         "
       >
-        <p style="color: white">© 2022 ustvaril Lovro Mackošek</p>
+        <p style="color: white; font-size: 13px; margin-top: 20px;">© 2022 ustvaril Lovro Mackošek</p>
       </div>
     </div>
 
@@ -216,7 +218,7 @@ export default {
         <MobileExp></MobileExp>
       </div>
 
-      <MobileProjectsExp id="Znanja in projekti"></MobileProjectsExp>
+      <MobileProjectsExp id="Znanja"></MobileProjectsExp>
       <div class="test4">
           <h1>Grafični izdelki</h1>
           <div class="row">
@@ -252,6 +254,7 @@ export default {
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">Telefon: 070 346 952</p>
         <p id="p5">Email: lovro.mackosek@gmail.com</p>
+    
       </div>
 
 
@@ -266,7 +269,7 @@ export default {
           background-color: black;
         "
       >
-        <p style="color: white">© 2022 ustvaril Lovro Mackošek</p>
+        <p style="color: white">© 2022 ustvaril Lovro Mackošek1</p>
       </div>
     </div>
        <!-- <select v-model="$i18n.locale">

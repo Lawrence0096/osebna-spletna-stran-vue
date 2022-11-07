@@ -21,7 +21,7 @@ export default {
         <div class="text-container">
           <div>
            <b>Znanja</b> 
-            <p data-v-ca268c73="">• HTML, CSS, JavaScript</p>
+            <p data-v-ca268c73="">• HTML, CSS, JavaScript (TypeScript)</p>
             <p data-v-ca268c73="">• Ogrodje Angular</p>
             <p>• Poznavanje ogrodja Vue in React (prevsem Vue)</p>
             <p>• Delanje z REST klici</p>

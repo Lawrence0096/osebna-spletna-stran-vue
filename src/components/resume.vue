@@ -14,7 +14,7 @@ export default {
   methods: {
     showGoToLink() {
       document.location =
-        "https://drive.google.com/file/d/1a6HYltlqUvov26j2TjpGgE1407c0qxGu/view";
+        "https://drive.google.com/file/d/1fjhKuyvdQU-p4w-yv-6dQmLCBmPwF-1t/view";
     },
   },
 };
@@ -27,23 +27,10 @@ export default {
         <h1>O meni</h1>
         <h2>MOJE OZADJE</h2>
         <p>
-          Zanimam se za delo v računalništvu, 
-          hkrati pa imam tudi strast za ustvarjanje 
-          interaktivnih multimedijskih vsebin. 
-          Po izobrazbi sem inzenir informatike (6. stopnja) in medijski tehnik. 
-          Moja zadnja zaposlitev je bila na področju programiranja, 
-          kjer smo ustvarjali spletne aplikacije z ogrodjem Angular 
-          (oglejte si opise mojih projektov).
-           V preteklosti sem pa delal kot računalniški podpornik (informatik), 
-           grafični oblikovalec in tehnik na radiju.
+          Zanimam se za delo v računalništvu, hkrati pa imam tudi strast za ustvarjanje interaktivnih multimedijskih vsebin. Po izobrazbi sem inženir informatike (6. stopnja) in medijski tehnik. Moja zadnja zaposlitev je bila na področju programiranja, kjer smo ustvarjali spletne aplikacije z ogrodjem Angular (oglejte si opise mojih projektov). Hkrati pa sem bil tudi zadolžen za ustvarjanje UX/UI rešitev. V preteklosti sem pa delal kot računalniški podpornik (informatik), grafični oblikovalec in tehnik na radiju.
         </p>
         <p>
-          Kot informatik pa sem predvsem bil tehnični podpornik v podjetju, 
-          kjer sem predvsem pomagal uporabnikom, ter nameščal operacijski sisteme Windows 
-          na novih računalnikih.  V času mojega izobraževanja sem se naučil ustvarjati nove 
-          uporabnike (in jim dodeljevali pravice), dodajati in odstranjevati strojno opremo, 
-          ustvarjati varnostne kopije, posodabljati in instalirati programsko opremo, 
-          nadzorovati računalniški sistem, osnove upravljanja z omrežjem in odpravljanje napak.
+          Kot informatik sem opravljal delo tehničnega podpornika v podjetju, kjer sem predvsem pomagal uporabnikom, ter nameščal operacijski sisteme Windows na novih računalnikih.  V času mojega izobraževanja sem se naučil ustvarjati nove uporabnike (in jim dodeljevali pravice), dodajati in odstranjevati strojno opremo, ustvarjati varnostne kopije, posodabljati in instalirati programsko opremo, nadzorovati računalniški sistem.
         </p>
         <p>
           Kot medijski tenhik/grafični oblikovalec, 
