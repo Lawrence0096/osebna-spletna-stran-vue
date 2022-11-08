@@ -272,7 +272,7 @@ export default {
         <p style="color: white">© 2022 ustvaril Lovro Mackošek1</p>
       </div>
     </div>
-       <!-- <select v-model="$i18n.locale">
+     <!--   <select v-model="$i18n.locale">
           <option v-for="locale in $i18n.availableLocales" :key="locale">
             {{ locale }}
           </option>
@@ -304,6 +304,7 @@ export default {
           <div>
             <h5 id="single">Single Selection</h5>
             <SelectButton
+              :unselectable="false"
               v-model="value1"
               :options="options"
               aria-labelledby="single"
@@ -321,7 +322,10 @@ export default {
             <h5 id="custom">Custom Content</h5>
             <SelectButton
               v-model="value3"
+
               :options="justifyOptions"
+              unselectable= true
+              disabled=true
               optionLabel="value"
               dataKey="value"
               aria-labelledby="custom"
@@ -331,8 +335,8 @@ export default {
               </template>
             </SelectButton>
           </div>
-        </div> 
---> 
+        </div> -->
+ 
 
 
 
@@ -449,63 +453,4 @@ body {
 
 
 
-     <!--   <select v-model="$i18n.locale">
-          <option v-for="locale in $i18n.availableLocales" :key="locale">
-            {{ locale }}
-          </option>
-        </select>
-        <p>{{ $t("message.hello") }}</p>
 
-        <div>
-          <h5 id="single">Single Selection</h5>
-          <SelectButton aria-labelledby="single" />
-
-          <h5 id="multiple">Multiple Selection</h5>
-          <SelectButton
-            optionLabel="name"
-            multiple
-            aria-labelledby="multiple"
-          />
-
-          <h5 id="custom">Custom Content</h5>
-          <SelectButton
-            optionLabel="value"
-            dataKey="value"
-            aria-labelledby="custom"
-          >
-            <template #option="slotProps">
-              <i :class="slotProps.option.icon"></i>
-            </template>
-          </SelectButton>
-
-          <div>
-            <h5 id="single">Single Selection</h5>
-            <SelectButton
-              v-model="value1"
-              :options="options"
-              aria-labelledby="single"
-            />
-
-            <h5 id="multiple">Multiple Selection</h5>
-            <SelectButton
-              v-model="value2"
-              :options="paymentOptions"
-              optionLabel="name"
-              multiple
-              aria-labelledby="multiple"
-            />
-
-            <h5 id="custom">Custom Content</h5>
-            <SelectButton
-              v-model="value3"
-              :options="justifyOptions"
-              optionLabel="value"
-              dataKey="value"
-              aria-labelledby="custom"
-            >
-              <template #option="slotProps">
-                <i :class="slotProps.option.icon"></i>
-              </template>
-            </SelectButton>
-          </div>
-        </div> -->
