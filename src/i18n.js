@@ -1,12 +1,12 @@
 import { createI18n } from 'vue-i18n/dist/vue-i18n.esm-browser'
 
 const messages = {
-  US: {
+  EN: {
     message: {
       hello: 'hello world23'
     }
   },
-  DE: {
+  SL: {
     message: {
       hello: 'Hallo Welt'
     }
@@ -14,10 +14,10 @@ const messages = {
 }
 
 const i18n = createI18n({
-  locale: 'US',
+  locale: 'SL',
   messages,
   datetimeFormats: {
-    US: {
+    EN: {
       short: {
         year: 'numeric',
         month: 'numeric',
@@ -32,7 +32,7 @@ const i18n = createI18n({
         second: '2-digit'
       }
     },
-    DE: {
+    SL: {
       short: {
         year: 'numeric',
         month: 'numeric',

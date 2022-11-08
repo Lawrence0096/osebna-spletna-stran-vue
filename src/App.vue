@@ -32,10 +32,18 @@ export default {
     },
 
     clickedShowFullPanel(e: string) {
-       this.visibleFull = true
+      this.visibleFull = true;
+      if(this.$i18n.locale === 'SL'){
+        this.data2 = ["O meni", "Izobrazba in izkušnje", "Projekti", "Kontakt"]
+      }
+      else{
+        this.data2 = ["About me", "Education and References", "Projects", "Contact"]
+      }
+
+
     },
 
-    showSpecifilMobileSection(e: any){
+    showSpecifilMobileSection(e: any) {
       this.visibleFull = false;
       console.log(e);
       const id = e;
@@ -44,7 +52,6 @@ export default {
       const y =
         element!.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
-      
     },
 
     checkScreenSizeOnInit() {
@@ -68,8 +75,8 @@ export default {
     MobileNavBar,
     MobileCover,
     MobileExp,
-    MobileProjectsExp
-},
+    MobileProjectsExp,
+  },
 
   mounted() {
     this.checkScreenSizeOnInit();
@@ -87,29 +94,13 @@ export default {
 
   data() {
     return {
-      data: [
-        "O meni",
-        "Izobrazba in izkušnje",
-        "Znanja",
-        "Kontakt",
-      ],
+      data: ["O meni", "Izobrazba in izkušnje", "Projekti", "Kontakt"],
+      data2: ["O meni", "Izobrazba in izkušnje", "Projekti", "Kontakt"],
       isScreenSizeMobile: false,
       visibleFull: false,
-      value1: "Off",
-      value2: null,
-      value3: null,
-      options: ["Off", "On"],
-      paymentOptions: [
-        { name: "Option 1", value: 1 },
-        { name: "Option 2", value: 2 },
-        { name: "Option 3", value: 3 },
-      ],
-      justifyOptions: [
-        { icon: "pi pi-align-left", value: "Left" },
-        { icon: "pi pi-align-right", value: "Right" },
-        { icon: "pi pi-align-center", value: "Center" },
-        { icon: "pi pi-align-justify", value: "Justify" },
-      ],
+      value1: "Sl",
+      options: ["Sl", "En"],
+    
     };
   },
 };
@@ -129,12 +120,12 @@ export default {
       </div>
       <div
         id="Izobrazba in izkušnje"
-        style="height: 1350px; width: 100%; background-color: rgb(217 217 217);"
+        style="height: 1350px; width: 100%; background-color: rgb(217 217 217)"
       >
         <Exp></Exp>
         <Projects></Projects>
       </div>
-      <div id="Znanja" style="width: 100%; background-color: #d0e2ff">
+      <div id="Projekti" style="width: 100%; background-color: #d0e2ff">
         <ProjectsExp></ProjectsExp>
         <br />
         <div class="test4">
@@ -167,7 +158,6 @@ export default {
         id="Kontakt"
         style="height: 160px; width: 100%; background-color: #f0f5f9"
         class="contact-container"
-
       >
         <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
           Kontakt:
@@ -175,9 +165,7 @@ export default {
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">Telefon: 070 346 952</p>
         <p id="p5">Email: lovro.mackosek@gmail.com</p>
-
       </div>
-   
 
       <div
         style="
@@ -189,7 +177,9 @@ export default {
           background-color: black;
         "
       >
-        <p style="color: white; font-size: 13px; margin-top: 20px;">© 2022 ustvaril Lovro Mackošek</p>
+        <p style="color: white; font-size: 13px; margin-top: 20px">
+          © 2022 ustvaril Lovro Mackošek
+        </p>
       </div>
     </div>
 
@@ -202,8 +192,13 @@ export default {
         position="full"
       >
         <div class="mobile-navigation-bar">
-          <span v-on:click="showSpecifilMobileSection(item)" style="margin-top: 20px" id="nav-title" v-for="item in data" :key="item">
-            {{ item }}
+          <span
+            v-on:click="showSpecifilMobileSection(item)"
+            style="margin-top: 20px"
+            id="nav-title"
+            v-for="(item,index) in data" :key="item"
+          >
+            {{ data2[index] }}
           </span>
         </div>
       </Sidebar>
@@ -213,39 +208,45 @@ export default {
         <Resume></Resume>
       </div>
 
-
-      <div id="Izobrazba in izkušnje" style="background-color: #d9d9d9; padding-top: 5px; padding-bottom: 40px; ">
+      <div
+        id="Izobrazba in izkušnje"
+        style="
+          background-color: #d9d9d9;
+          padding-top: 5px;
+          padding-bottom: 40px;
+        "
+      >
         <MobileExp></MobileExp>
       </div>
 
-      <MobileProjectsExp id="Znanja"></MobileProjectsExp>
+      <MobileProjectsExp id="Projekti"></MobileProjectsExp>
       <div class="test4">
-          <h1>Grafični izdelki</h1>
-          <div class="row">
-            <div class="column">
-              <img src="./assets/New folder/1.png" style="width: 100%" />
-              <img src="./assets/New folder/2.jpg" style="width: 100%" />
-              <img src="./assets/New folder/3.jpg" style="width: 100%" />
-              <img src="./assets/New folder/13.jpg" style="width: 100%" />
-            </div>
-            <div class="column">
-              <img src="./assets/New folder/4.jpg" style="width: 100%" />
-              <img src="./assets/New folder/5.jpg" style="width: 100%" />
-              <img src="./assets/New folder/6.jpg" style="width: 100%" />
-              <img src="./assets/New folder/7.jpg" style="width: 100%" />
-              <img src="./assets/New folder/12.jpg" style="width: 100%" />
-            </div>
-            <div class="column">
-              <img src="./assets/New folder/8.jpg" style="width: 100%" />
-              <img src="./assets/New folder/9.jpg" style="width: 100%" />
-              <img src="./assets/New folder/10.jpg" style="width: 100%" />
-              <img src="./assets/New folder/11.jpg" style="width: 100%" />
-            </div>
+        <h1>Grafični izdelki</h1>
+        <div class="row">
+          <div class="column">
+            <img src="./assets/New folder/1.png" style="width: 100%" />
+            <img src="./assets/New folder/2.jpg" style="width: 100%" />
+            <img src="./assets/New folder/3.jpg" style="width: 100%" />
+            <img src="./assets/New folder/13.jpg" style="width: 100%" />
+          </div>
+          <div class="column">
+            <img src="./assets/New folder/4.jpg" style="width: 100%" />
+            <img src="./assets/New folder/5.jpg" style="width: 100%" />
+            <img src="./assets/New folder/6.jpg" style="width: 100%" />
+            <img src="./assets/New folder/7.jpg" style="width: 100%" />
+            <img src="./assets/New folder/12.jpg" style="width: 100%" />
+          </div>
+          <div class="column">
+            <img src="./assets/New folder/8.jpg" style="width: 100%" />
+            <img src="./assets/New folder/9.jpg" style="width: 100%" />
+            <img src="./assets/New folder/10.jpg" style="width: 100%" />
+            <img src="./assets/New folder/11.jpg" style="width: 100%" />
           </div>
         </div>
-        <div
+      </div>
+      <div
         id="Kontakt"
-        style="height: 160px; width: 100%; padding-top:21px;"
+        style="height: 160px; width: 100%; padding-top: 21px"
         class="contact-container"
       >
         <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
@@ -254,10 +255,7 @@ export default {
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">Telefon: 070 346 952</p>
         <p id="p5">Email: lovro.mackosek@gmail.com</p>
-    
       </div>
-
-
 
       <div
         style="
@@ -272,76 +270,17 @@ export default {
         <p style="color: white">© 2022 ustvaril Lovro Mackošek1</p>
       </div>
     </div>
-     <!--   <select v-model="$i18n.locale">
-          <option v-for="locale in $i18n.availableLocales" :key="locale">
-            {{ locale }}
-          </option>
-        </select>
-        <p>{{ $t("message.hello") }}</p>
+   
 
-        <div>
-          <h5 id="single">Single Selection</h5>
-          <SelectButton aria-labelledby="single" />
-
-          <h5 id="multiple">Multiple Selection</h5>
-          <SelectButton
-            optionLabel="name"
-            multiple
-            aria-labelledby="multiple"
-          />
-
-          <h5 id="custom">Custom Content</h5>
-          <SelectButton
-            optionLabel="value"
-            dataKey="value"
-            aria-labelledby="custom"
-          >
-            <template #option="slotProps">
-              <i :class="slotProps.option.icon"></i>
-            </template>
-          </SelectButton>
-
-          <div>
-            <h5 id="single">Single Selection</h5>
-            <SelectButton
-              :unselectable="false"
-              v-model="value1"
-              :options="options"
-              aria-labelledby="single"
-            />
-
-            <h5 id="multiple">Multiple Selection</h5>
-            <SelectButton
-              v-model="value2"
-              :options="paymentOptions"
-              optionLabel="name"
-              multiple
-              aria-labelledby="multiple"
-            />
-
-            <h5 id="custom">Custom Content</h5>
-            <SelectButton
-              v-model="value3"
-
-              :options="justifyOptions"
-              unselectable= true
-              disabled=true
-              optionLabel="value"
-              dataKey="value"
-              aria-labelledby="custom"
-            >
-              <template #option="slotProps">
-                <i :class="slotProps.option.icon"></i>
-              </template>
-            </SelectButton>
-          </div>
-        </div> -->
- 
-
-
-
+    <SelectButton
+      style="transform:scale(0.7)"
+      :unselectable="false"
+      v-model="$i18n.locale"
+      :options="$i18n.availableLocales"
+      aria-labelledby="single"
+    />
+    <p>{{ $t("message.hello") }}</p>
   </div>
-
 </template>
 
 <style>
@@ -349,12 +288,11 @@ html {
   scroll-behavior: smooth !important;
 }
 
-
-.mobile-navigation-bar{
+.mobile-navigation-bar {
   display: flex;
   flex-direction: column;
   font-size: 22px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin-top: 25px;
   text-align: center;
 }
@@ -364,8 +302,7 @@ html {
   cursor: pointer;
 }
 
-
-#Izobrazba in izkušnje{
+#Izobrazba in izkušnje {
   background: url(./assets/imgs/bg.jpg);
 }
 
@@ -428,6 +365,11 @@ body {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+
+.select-lang{
+  position: absolute;
+  z-index: 20;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */

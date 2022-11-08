@@ -1,18 +1,56 @@
 <template>
+ 
+    <SelectButton
+      class="select-lang"
+      style="transform:scale(0.55);"
+      @click="changeHeaderNames()"
+      :unselectable="false"
+      v-model="$i18n.locale"
+      :options="$i18n.availableLocales"
+      aria-labelledby="single"
+    />
   <div class="navigation-bar">
-    <span @click="showDetailModal(item)" id="nav-title" v-for="item in headers" :key="item">
-      {{ item }}
+    
+    <span @click="showDetailModal(item)" id="nav-title" v-for="(item, index) in headers" :key="item">
+       {{data[index]}}
     </span>
+    <div>
+    
+    </div>
   </div>
 </template>
 
 <script>
+
+
+
 export default {
   name: "Nav-bar",
   props: {
-    headers: String,
+    headers: [],
   },
+
+  data() {
+    return {
+      data: ["O meni", "Izobrazba in izkušnje", "Projekti", "Kontakt"],
+     
+    };
+  },
+  mounted() {
+    console.log(this.$i18n.locale)
+  },
+
+
   methods: {
+    changeHeaderNames(){
+      if(this.$i18n.locale === 'SL'){
+        this.data = ["O meni", "Izobrazba in izkušnje", "Projekti", "Kontakt"]
+      }
+      else{
+        this.data = ["About me", "Education and References", "Projects", "Contact"]
+      }
+    },
+
     showDetailModal(product) {
         this.$emit('clicked-show-detail', product);
     },
@@ -58,4 +96,14 @@ export default {
 body {
   margin: 0
 }
+
+
+
+.select-lang {
+    margin-top: -29px;
+    z-index: 30;
+    margin-left: -22px;
+    position: fixed;
+}
+
 </style>

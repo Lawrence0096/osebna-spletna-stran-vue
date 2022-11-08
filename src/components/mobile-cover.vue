@@ -5,7 +5,6 @@
         <img class='cv-img' src="../assets/imgs/3.jpg" alt='img' />
         <h2>Lovro Mackošek</h2>
         <p>Inženir Infromatike, medijski tehnik</p>
-        <p>IT engineer, front-end developer, kreator multimedijskih vsebin</p>
         <p>Šentjur pri Celju</p>
         <p>lovro.mackosek@gmail.com</p>
         <p>070 346 952</p>
