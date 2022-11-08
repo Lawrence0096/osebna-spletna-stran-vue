@@ -13,7 +13,7 @@ const messages = {
       intPar3:  'As a multimedia technician/graphic designer, I created many different online advertisements, graphic visualizations. When I worked on the radio, I also created various promotional videos and I helped create radio ads.',
       educationHeader: 'Education',
       multimediaTech: '• Multimedia technician',
-      IT: 'IT engineer',
+      IT: '• IT engineer',
       exp: 'Experience',
       peter: '• Work in a photo studio (FotoPeter s.p.) 05/2014 to 09/2014',
       neja: '• Work for a graphic design company (Nejamedia s.p.) 04/2015 to 10/2015',
@@ -39,7 +39,7 @@ const messages = {
       projects: 'Projects',
       practical: 'A practical project for my degree',
       pro1: 'For my practical work, I created a simple static page for the fictional company named Argus. A website mostly contains HTML and CSS. Using JavaScript, I created a navigation, simple calculator, map (which displays the location of the company) and PDF viewer on the website using an external library.',
-      access: 'You can access the website here',
+      access: 'You can access the website',
       support: 'Customer support application',
       pro2: 'My first project in Angular was a simple web application designed to improve technical support. The user saw the customers most crucial information and various statuses. If any problem happened with the customer, the user saw certain information, which had a specific color. The information was updated every five minutes. When the user saw certain problems, he could send this information back to the server.',
       europe: 'Application for displaying vehicles in Europe',
@@ -47,8 +47,9 @@ const messages = {
       graphic: 'Graphic projects',
       contact: 'Contact:',
       phone: 'Phone: 070 346 952',
-      email: 'Email: lovro.mackosek@gmail.com',
-      createdBy: '© 2022 created by Lovro Mackošek'
+      email: 'Email: lovro.mackosekgmail.com',
+      createdBy: '© 2022 created by Lovro Mackošek',
+      here: 'here'
     }
   },
   SL: {
@@ -89,7 +90,7 @@ const messages = {
       projects: 'Projekti',
       practical: 'Praktični izdelek za diplomsko delo',
       pro1: 'Moj prvi projekt v angularju je bila preprosta spletna aplikacija, ki je bila namenjena za izboljšanje tehnične podpore. Uporabnik je videl najbolj ključne informacije stranke in različne statuse. Če se je pri stranki zgodila kakšna težava, je uporabnik videl določene informacije obarvane s specifično barvo. Informacije so se posodabljale vsakih petih minut. Ko je uporabnik videl določene probleme, je lahko to informacijo nazaj poslal na strežnik.',
-      access: 'Do spletne strani lahko dostopate tukaj',
+      access: 'Do spletne strani lahko dostopate',
       support: 'Aplikacija za podporo uporabnikom',
       pro2: 'My first project in Angular was a simple web application designed to improve technical support. The user saw the customers most crucial information and various statuses. If any problem happened with the customer, the user saw certain information, which had a specific color. The information was updated every five minutes. When the user saw certain problems, he could send this information back to the server.',
       europe: 'Aplikacija za prikazovanje vozil po Evropi',
@@ -97,8 +98,9 @@ const messages = {
       graphic: 'Grafični izdelki',
       contact: 'Kontakt:',
       phone: 'Telefon: 070 346 952',
-      email: 'Email: lovro.mackosek@gmail.com',
-      createdBy: '© 2022 ustvaril Lovro Mackošek'
+      email: 'Email: lovro.mackosekgmail.com',
+      createdBy: '© 2022 ustvaril Lovro Mackošek',
+      here: 'tukaj'
     }
   }
 }

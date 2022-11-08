@@ -129,7 +129,8 @@ export default {
         <ProjectsExp></ProjectsExp>
         <br />
         <div class="test4">
-          <h1>Grafični izdelki</h1>
+          <h1>{{ $t("message.graphic") }}</h1>
+
           <div class="row">
             <div class="column">
               <img src="./assets/New folder/1.png" style="width: 100%" />
@@ -160,11 +161,11 @@ export default {
         class="contact-container"
       >
         <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
-          Kontakt:
+          {{ $t("message.contact") }}
         </p>
         <p id="p2">Lovro Mackošek</p>
-        <p id="p4">Telefon: 070 346 952</p>
-        <p id="p5">Email: lovro.mackosek@gmail.com</p>
+        <p id="p4">{{ $t("message.phone") }}</p>
+        <p id="p5">{{ $t("message.email") }}</p>
       </div>
 
       <div
@@ -178,7 +179,7 @@ export default {
         "
       >
         <p style="color: white; font-size: 13px; margin-top: 20px">
-          © 2022 ustvaril Lovro Mackošek
+          {{ $t("message.createdBy") }}
         </p>
       </div>
     </div>
@@ -221,7 +222,7 @@ export default {
 
       <MobileProjectsExp id="Projekti"></MobileProjectsExp>
       <div class="test4">
-        <h1>Grafični izdelki</h1>
+        <h1>{{ $t("message.graphic") }}</h1>
         <div class="row">
           <div class="column">
             <img src="./assets/New folder/1.png" style="width: 100%" />
@@ -249,12 +250,12 @@ export default {
         style="height: 160px; width: 100%; padding-top: 21px"
         class="contact-container"
       >
-        <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
-          Kontakt:
+      <p style="margin-top: -30px; font-weight: 500; font-size: 22px">
+          {{ $t("message.contact") }}
         </p>
         <p id="p2">Lovro Mackošek</p>
-        <p id="p4">Telefon: 070 346 952</p>
-        <p id="p5">Email: lovro.mackosek@gmail.com</p>
+        <p id="p4">{{ $t("message.phone") }}</p>
+        <p id="p5">{{ $t("message.email") }}</p>
       </div>
 
       <div
@@ -267,19 +268,12 @@ export default {
           background-color: black;
         "
       >
-        <p style="color: white">© 2022 ustvaril Lovro Mackošek1</p>
+        <p style="color: white">{{ $t("message.createdBy") }}</p>
       </div>
     </div>
    
 
-    <SelectButton
-      style="transform:scale(0.7)"
-      :unselectable="false"
-      v-model="$i18n.locale"
-      :options="$i18n.availableLocales"
-      aria-labelledby="single"
-    />
-    <p>{{ $t("message.hello") }}</p>
+   
   </div>
 </template>
 

@@ -24,20 +24,16 @@ export default {
   <div>
     <div class="text-container">
       <div class="test">
-        <h1>O meni</h1>
-        <h2>MOJE OZADJE</h2>
+        <h1>{{ $t("message.about") }}</h1>
+        <h2>{{ $t("message.back") }}</h2>
         <p>
-          Zanimam se za delo v računalništvu, hkrati pa imam tudi strast za ustvarjanje interaktivnih multimedijskih vsebin. Po izobrazbi sem inženir informatike (6. stopnja) in medijski tehnik. Moja zadnja zaposlitev je bila na področju programiranja, kjer smo ustvarjali spletne aplikacije z ogrodjem Angular (oglejte si opise mojih projektov). Hkrati pa sem bil tudi zadolžen za ustvarjanje UX/UI rešitev. V preteklosti sem pa delal kot računalniški podpornik (informatik), grafični oblikovalec in tehnik na radiju.
+          {{ $t("message.intPar1") }}
         </p>
         <p>
-          Kot informatik sem opravljal delo tehničnega podpornika v podjetju, kjer sem predvsem pomagal uporabnikom, ter nameščal operacijski sisteme Windows na novih računalnikih.  V času mojega izobraževanja sem se naučil ustvarjati nove uporabnike (in jim dodeljevali pravice), dodajati in odstranjevati strojno opremo, ustvarjati varnostne kopije, posodabljati in instalirati programsko opremo, nadzorovati računalniški sistem.
+          {{ $t("message.intPar2") }}
         </p>
         <p>
-          Kot medijski tenhik/grafični oblikovalec, 
-          sem pa ustvarjal veliko različnih spletnih oglasov, 
-          grafičnih podob. 
-          Ko sem delal na radiju sem tudi ustvarjal različne promocijke videje, 
-          ter pomagal ustvarjati radijske oglase.
+          {{ $t("message.intPar3") }}
         </p>
       </div>
     </div>

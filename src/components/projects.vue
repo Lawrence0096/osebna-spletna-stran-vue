@@ -16,27 +16,27 @@ export default {
   <div class="exp-container">
     <Card style="margin-top: 100px">
       <template #header> </template>
-      <template #title>Znanja in zanimanja</template>
+      <template #title>{{ $t("message.skillsInt") }}</template>
       <template #content>
         <div class="text-container">
           <div>
-           <b>Znanja</b> 
+           <b>{{ $t("message.skills") }}</b> 
             <p data-v-ca268c73="">• HTML, CSS, JavaScript (TypeScript)</p>
-            <p data-v-ca268c73="">• Ogrodje Angular</p>
-            <p>• Poznavanje ogrodja Vue in React (prevsem Vue)</p>
-            <p>• Delanje z REST klici</p>
-            <p>• Delo z gitom in gitlabom/githubom</p>
-            <p>• Ustvarjanje UI/UX rešitev</p>
-            <p>• Delanje z Adobe Suitom (Photoshop, Illustrator, Premiere, Audition, XD)</p>
-            <p>• Računalniška podpora</p>
-            <p>• Delo z Mac, Windows ali Linux operacijskim sistemom</p>
+            <p data-v-ca268c73="">{{ $t("message.angular") }}</p>
+            <p>{{ $t("message.vue") }}</p>
+            <p>{{ $t("message.REST") }}</p>
+            <p>{{ $t("message.git") }}</p>
+            <p>{{ $t("message.UX") }}</p>
+            <p>{{ $t("message.Adobe") }}</p>
+            <p>{{ $t("message.CompSuppport") }}</p>
+            <p>{{ $t("message.linux") }}</p>
           </div>
           <div>
-           <b>Zanimanja</b> 
-            <p data-v-ca268c73="">• Sistemska administracija</p>
+           <b>{{ $t("message.interests") }}</b> 
+            <p data-v-ca268c73="">{{ $t("message.sys") }}</p>
 
-            <p data-v-ca268c73="">• CMS (Content Management System)</p>
-            <p>• Delo z wordpressom</p>
+            <p data-v-ca268c73="">{{ $t("message.cms") }}</p>
+            <p>{{ $t("message.wordpress") }}</p>
           </div>
         </div>
       </template>

@@ -16,26 +16,26 @@ export default {
   <div class="exp-container">
     
     <Card style="margin-top: 100px">
-      <template #title>Izobrazba</template>
+      <template #title>{{ $t("message.educationHeader") }}</template>
       <template  #content>
         <div style="line-height: 1.5; font-size: 20px;">
-          <p style="margin-top: -5px">• Medijski tehnik</p>
-          <p>• Inženir informatike</p>
+          <p style="margin-top: -5px">{{ $t("message.multimediaTech") }}</p>
+          <p>{{ $t("message.IT") }}</p>
         </div>
         
       </template>
     </Card>
     <Card style="margin-top: 100px">
-      <template #title>Izkušnje</template>
+      <template #title>{{ $t("message.exp") }}</template>
       <template #content>
         <div style="line-height: 1.5; font-size: 18px; ">
-          <p style="margin-top: -5px">• Delo v foto studiju (FotoPeter s.p.) 05/2014 do 09/2014</p>
-            <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-            <p>• Pomoč pri organizaciji prireditev (Drago Mackošek s.p.) 2015-2020</p>
-            <p>• Občasno oblikovanje grafičnih podob (Drago Mackošeks.p.) 2015-2020</p>
-            <p>• Delo na radiju (Radio Štarjerski val d.o.o.) 04/2019 do 08/ 2019</p>
-            <p>• Popravljanje računalnikov (INVOICE d.o.o.) 01/2021 do 03 2021.</p>
-            <p>• Ustvarjanje spletnih aplikacij (Navteh d.o.o) 08/2021 do 10/2022 </p>
+          <p style="margin-top: -5px">{{ $t("message.peter") }}</p>
+            <p>{{ $t("message.neja") }}</p>
+            <p>{{ $t("message.drago") }}</p>
+            <p>{{ $t("message.drago2") }}</p>
+            <p>{{ $t("message.radio") }}</p>
+            <p>{{ $t("message.invoice") }}</p>
+            <p>{{ $t("message.navteh") }}</p>
         </div>
             
       </template>

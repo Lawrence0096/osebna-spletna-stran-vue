@@ -16,52 +16,52 @@ export default {
   <div style="margin-top: 50px" class="exp-container">
     
     <Card style="margin-top: 0px">
-      <template #title>Izobrazba</template>
+      <template #title>{{ $t("message.educationHeader") }}</template>
       <template  #content>
         <div style="line-height: 1.5; font-size: 16px;">
-          <p style="margin-top: -5px">• Medijski tehnik</p>
-          <p>• Inženir informatike</p>
+          <p style="margin-top: -5px">{{ $t("message.multimediaTech") }}</p>
+          <p>{{ $t("message.IT") }}</p>
         </div>
         
       </template>
     </Card>
     <Card style="margin-top: 0px">
-      <template #title>Izkušnje</template>
+      <template #title>{{ $t("message.exp") }}</template>
       <template #content>
         <div style="line-height: 1.5; font-size: 14px; ">
-          <p style="margin-top: -5px">• Delo v foto studiju (FotoPeter s.p.) 05/2014 do 09/2014</p>
-            <p>• Delo za grafično podjetje (Nejamedia s.p.) 04/2015 do 10/2015</p>
-            <p>• Pomoč pri organizaciji prireditev (Drago Mackošek s.p.) 2015-2020</p>
-            <p>• Občasno oblikovanje grafičnih podob (Drago Mackošeks.p.) 2015-2020</p>
-            <p>• Delo na radiju (Radio Štarjerski val d.o.o.) 04/2019 do 08/ 2019</p>
-            <p>• Popravljanje računalnikov (INVOICE d.o.o.) 01/2021 do 03 2021.</p>
-
+          <p style="margin-top: -5px">{{ $t("message.peter") }}</p>
+            <p>{{ $t("message.neja") }}</p>
+            <p>{{ $t("message.drago") }}</p>
+            <p>{{ $t("message.drago2") }}</p>
+            <p>{{ $t("message.radio") }}</p>
+            <p>{{ $t("message.invoice") }}</p>
+            <p>{{ $t("message.navteh") }}</p>
         </div>
             
       </template>
     </Card>
     <Card style="margin-top: 0px">
-      <template #title>Izkušnje</template>
+      <template #title>{{ $t("message.skillsInt") }}</template>
       <template #content>
         <div style="line-height: 1.5; font-size: 14px; ">
-          <b>Znanja</b> 
+          <b>{{ $t("message.skills") }}</b> 
             <p>• HTML, CSS, JavaScript (TypeScript)</p>
-            <p>• Ogrodje Angular</p>
-            <p>• Poznavanje ogrodja Vue in React (prevsem Vue)</p>
-            <p>• Delanje z REST klici</p>
-            <p>• Delo z gitom in gitlabom/githubom</p>
-            <p>• Ustvarjanje UI/UX rešitev</p>
-            <p>• Delanje z Adobe Suitom (Photoshop, Illustrator, Premiere, Audition, XD)</p>
-            <p>• Računalniška podpora</p>
-            <p>• Delo z Mac, Windows ali Linux operacijskim sistemom</p>
+            <p>{{ $t("message.angular") }}r</p>
+            <p>{{ $t("message.vue") }}</p>
+            <p>{{ $t("message.REST") }}</p>
+            <p>{{ $t("message.git") }}</p>
+            <p>{{ $t("message.UX") }}</p>
+            <p>{{ $t("message.Adobe") }}</p>
+            <p>{{ $t("message.CompSuppport") }}</p>
+            <p>{{ $t("message.linux") }}</p>
           </div>
-          <div>
+          <div style="font-size: 14px">
             <br>
-           <b>Zanimanja</b> 
-            <p>• Sistemska administracija</p>
+            <b>{{ $t("message.interests") }}</b> 
+            <p>{{ $t("message.sys") }}</p>
 
-            <p>• CMS (Content Management System)</p>
-            <p>• Delo z wordpressom</p>
+            <p>{{ $t("message.cms") }}</p>
+            <p>{{ $t("message.wordpress") }}</p>
         </div>
       </template>
     </Card>
