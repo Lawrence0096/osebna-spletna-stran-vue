@@ -47,9 +47,11 @@ const messages = {
       graphic: 'Graphic projects',
       contact: 'Contact:',
       phone: 'Phone: 070 346 952',
-      email: 'Email: lovro.mackosekgmail.com',
+      email: 'Email:',
       createdBy: '© 2022 created by Lovro Mackošek',
-      here: 'here'
+      here: 'here',
+      cvEN: 'English CV',
+      cvSL: 'Slovenian CV'
     }
   },
   SL: {
@@ -98,12 +100,15 @@ const messages = {
       graphic: 'Grafični izdelki',
       contact: 'Kontakt:',
       phone: 'Telefon: 070 346 952',
-      email: 'Email: lovro.mackosekgmail.com',
+      email: 'Email:',
       createdBy: '© 2022 ustvaril Lovro Mackošek',
-      here: 'tukaj'
+      here: 'tukaj',
+      cvEN: 'Angleški CV',
+      cvSL: 'Slovenski CV'
     }
   }
 }
+
 
 const i18n = createI18n({
   locale: 'SL',

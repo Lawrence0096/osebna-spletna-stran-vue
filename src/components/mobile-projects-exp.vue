@@ -75,6 +75,7 @@ export default {
     background-image: url(../assets/imgs/webpic2-2.png);
     background-size: cover;
     align-self: center;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 
 
@@ -84,12 +85,14 @@ export default {
     height: 200px;
     width: 100%;
     background-image: url(../assets/imgs/project-1.1.png);
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 
 }
 .project-pic-3 {
     height: 400px;
     width: 257px;
     background-image: url(../assets/imgs/webpic4.png);
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
     background-size: cover;
     align-self: center;
 }
@@ -97,6 +100,7 @@ export default {
     height: 400px;
     width: 257px;
     background-image: url(../assets/imgs/webpic1.png);
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
     background-size: cover;
     align-self: center;
 }

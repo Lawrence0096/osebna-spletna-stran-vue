@@ -17,7 +17,7 @@ export default {
         <div class="project-text">
             <b>{{ $t("message.practical") }}</b>
             <p>{{ $t("message.pro1") }}</p>
-            <p>{{ $t("message.access") }}<a href="https://lawrence0096.github.io/Spletna-stran-za-organizacijo-Argus/page1.html">{{ $t("message.here") }}</a></p>
+            <p>{{ $t("message.access") }} <a href="https://lawrence0096.github.io/Spletna-stran-za-organizacijo-Argus/page1.html"> {{ $t("message.here") }}</a></p>
         </div>
         <div class="project-pic"></div>
       </div>
@@ -95,7 +95,7 @@ a{
     width: 100%;
     background-size: cover;
     background-image: url(../assets/imgs/webpic2.png);
-
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 
 
@@ -106,12 +106,14 @@ a{
     width: 100%;
     background-image: url(../assets/imgs/project-1.1.png);
     background-size: cover;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 .project-pic-3 {
     height: 445px;
     width: 100%;
     background-image: url(../assets/imgs/webpic3.png);
     background-size: cover;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 .project-pic-4 {
     height: 486px;
@@ -119,6 +121,7 @@ a{
     background-image: url(../assets/imgs/webpic1.png);
     background-size: cover;
     align-self: center;
+    box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 
 .test {

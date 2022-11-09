@@ -165,7 +165,7 @@ export default {
         </p>
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">{{ $t("message.phone") }}</p>
-        <p id="p5">{{ $t("message.email") }}</p>
+        <p id="p5">{{ $t("message.email") }} lovro.mackosek@gmail.com</p>
       </div>
 
       <div
@@ -255,7 +255,7 @@ export default {
         </p>
         <p id="p2">Lovro Mackošek</p>
         <p id="p4">{{ $t("message.phone") }}</p>
-        <p id="p5">{{ $t("message.email") }}</p>
+        <p id="p5">{{ $t("message.email") }} lovro.mackosek@gmail.com</p>
       </div>
 
       <div

@@ -14,7 +14,11 @@ export default {
   methods: {
     showGoToLink() {
       document.location =
-        "https://drive.google.com/file/d/1fjhKuyvdQU-p4w-yv-6dQmLCBmPwF-1t/view";
+        "https://drive.google.com/file/d/1hcYSK6PSJR2jN3RD_kU-yoPJhWODSp7E/view?usp=sharing";
+    },
+    showGoToLink2() {
+      document.location =
+        "https://drive.google.com/file/d/1DOgtmoZCeH6UeJUbCj1zy-6c9yTa5j6m/view?usp=sharing";
     },
   },
 };
@@ -39,7 +43,8 @@ export default {
     </div>
 
     <div class="card-container flex">
-      <Button @click="showGoToLink()">Dostop do CV-ja</Button>
+      <Button @click="showGoToLink()">{{ $t("message.cvSL") }}</Button>
+      <Button style="margin-left: 11px" @click="showGoToLink2()">{{ $t("message.cvEN") }}</Button>
     </div>
   </div>
 </template>
