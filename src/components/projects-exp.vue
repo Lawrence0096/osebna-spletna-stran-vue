@@ -109,14 +109,14 @@ a{
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 .project-pic-3 {
-    height: 445px;
+    height: 500px;
     width: 100%;
     background-image: url(../assets/imgs/webpic3.png);
     background-size: cover;
     box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 38%);
 }
 .project-pic-4 {
-    height: 486px;
+    height: 535px;
     width: 35%;
     background-image: url(../assets/imgs/webpic1.png);
     background-size: cover;
