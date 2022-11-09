@@ -107,7 +107,7 @@ export default {
     .cv-img{
 
     height: 183px;
-    width: 167px;
+    width: 160px;
     border-radius: 50%;
     margin-top: 30px;
 }

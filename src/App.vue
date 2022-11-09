@@ -133,23 +133,23 @@ export default {
 
           <div class="row">
             <div class="column">
-              <img src="./assets/New folder/1.png" style="width: 100%" />
-              <img src="./assets/New folder/2.jpg" style="width: 100%" />
-              <img src="./assets/New folder/3.jpg" style="width: 100%" />
-              <img src="./assets/New folder/13.jpg" style="width: 100%" />
+              <img src="./assets/1.png" style="width: 100%" />
+              <img src="./assets/2.jpg" style="width: 100%" />
+              <img src="./assets/3.jpg" style="width: 100%" />
+              <img src="./assets/13.jpg" style="width: 100%" />
             </div>
             <div class="column">
-              <img src="./assets/New folder/4.jpg" style="width: 100%" />
-              <img src="./assets/New folder/5.jpg" style="width: 100%" />
-              <img src="./assets/New folder/6.jpg" style="width: 100%" />
-              <img src="./assets/New folder/7.jpg" style="width: 100%" />
-              <img src="./assets/New folder/12.jpg" style="width: 100%" />
+              <img src="./assets/4.jpg" style="width: 100%" />
+              <img src="./assets/5.jpg" style="width: 100%" />
+              <img src="./assets/6.jpg" style="width: 100%" />
+              <img src="./assets/7.jpg" style="width: 100%" />
+              <img src="./assets/12.jpg" style="width: 100%" />
             </div>
             <div class="column">
-              <img src="./assets/New folder/8.jpg" style="width: 100%" />
-              <img src="./assets/New folder/9.jpg" style="width: 100%" />
-              <img src="./assets/New folder/10.jpg" style="width: 100%" />
-              <img src="./assets/New folder/11.jpg" style="width: 100%" />
+              <img src="./assets/8.jpg" style="width: 100%" />
+              <img src="./assets/9.jpg" style="width: 100%" />
+              <img src="./assets/10.jpg" style="width: 100%" />
+              <img src="./assets/11.jpg" style="width: 100%" />
             </div>
           </div>
         </div>
@@ -225,23 +225,23 @@ export default {
         <h1>{{ $t("message.graphic") }}</h1>
         <div class="row">
           <div class="column">
-            <img src="./assets/New folder/1.png" style="width: 100%" />
-            <img src="./assets/New folder/2.jpg" style="width: 100%" />
-            <img src="./assets/New folder/3.jpg" style="width: 100%" />
-            <img src="./assets/New folder/13.jpg" style="width: 100%" />
+            <img src="./assets/1.png" style="width: 100%" />
+            <img src="./assets/2.jpg" style="width: 100%" />
+            <img src="./assets/3.jpg" style="width: 100%" />
+            <img src="./assets/13.jpg" style="width: 100%" />
           </div>
           <div class="column">
-            <img src="./assets/New folder/4.jpg" style="width: 100%" />
-            <img src="./assets/New folder/5.jpg" style="width: 100%" />
-            <img src="./assets/New folder/6.jpg" style="width: 100%" />
-            <img src="./assets/New folder/7.jpg" style="width: 100%" />
-            <img src="./assets/New folder/12.jpg" style="width: 100%" />
+            <img src="./assets/4.jpg" style="width: 100%" />
+            <img src="./assets/5.jpg" style="width: 100%" />
+            <img src="./assets/6.jpg" style="width: 100%" />
+            <img src="./assets/7.jpg" style="width: 100%" />
+            <img src="./assets/12.jpg" style="width: 100%" />
           </div>
           <div class="column">
-            <img src="./assets/New folder/8.jpg" style="width: 100%" />
-            <img src="./assets/New folder/9.jpg" style="width: 100%" />
-            <img src="./assets/New folder/10.jpg" style="width: 100%" />
-            <img src="./assets/New folder/11.jpg" style="width: 100%" />
+            <img src="./assets/8.jpg" style="width: 100%" />
+            <img src="./assets/9.jpg" style="width: 100%" />
+            <img src="./assets/10.jpg" style="width: 100%" />
+            <img src="./assets/11.jpg" style="width: 100%" />
           </div>
         </div>
       </div>
