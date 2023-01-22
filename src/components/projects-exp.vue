@@ -17,7 +17,7 @@ export default {
         <div class="project-text">
             <b>{{ $t("message.practical") }}</b>
             <p>{{ $t("message.pro1") }}</p>
-            <p>{{ $t("message.access") }} <a href="https://lawrence0096.github.io/Spletna-stran-za-organizacijo-Argus/page1.html"> {{ $t("message.here") }}</a></p>
+            <p>{{ $t("message.access") }} <a href="https://lawrence0096.github.io/Spletna-stran-za-organizacijo-Argus/"> {{ $t("message.here") }}</a></p>
         </div>
         <div class="project-pic"></div>
       </div>
